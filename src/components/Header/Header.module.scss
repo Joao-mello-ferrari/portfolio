@@ -1,0 +1,63 @@
+$bgHeader: #585858;
+
+.headerContainer{
+  width: 100vw;
+  max-width: 1440px;
+  height: 12.5vh;
+
+  background: $bgHeader;
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+
+  transition: background 0.6s;
+}
+
+.name{
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav{
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  margin-left: 30%;
+
+  a{
+    color: #FFFFFF;
+    font-size: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    
+    transition: color 0.2s;
+    &:hover{
+      color: #FF9517;
+    }
+  }
+
+  a + a{
+    margin-left: 2rem;
+  }
+
+}
+
+.activeLink::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 0.25rem;
+  width: 100%;
+  border-radius: 0.3rem 0.3rem 0 0;
+  background: #FF9517;
+}

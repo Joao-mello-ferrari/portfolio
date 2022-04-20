@@ -1,4 +1,4 @@
-$bgHeader: #262628;
+@import '../../styles/variables';
 
 .headerContainer{
   width: 100vw;
@@ -26,7 +26,7 @@ $bgHeader: #262628;
   font-family: 'Dancing Script';
   padding: 0 0.6rem;
 
-  background: linear-gradient(45deg, #f9f9f9, #FF9517);
+  background: linear-gradient(45deg, #f9f9f9, $theme);
   background-clip: text;
   -webkit-background-clip: text;
 
@@ -54,7 +54,7 @@ $bgHeader: #262628;
     transition: color 0.2s;
 
     &:hover{
-      color: #FF9517;
+      color: $theme;
     }
   }
 
@@ -71,5 +71,5 @@ $bgHeader: #262628;
   height: 0.25rem;
   width: 100%;
   border-radius: 0.3rem 0.3rem 0 0;
-  background: #FF9517;
+  background: $theme;
 }

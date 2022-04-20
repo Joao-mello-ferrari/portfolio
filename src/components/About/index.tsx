@@ -4,43 +4,38 @@ import styles from './About.module.scss'
 
 export function About(){
   return(
-    <div className={styles.container} id="about">
+    <div className={styles.container}>
       <section className={styles.description}>
        
         <div>
           <p>My go to work is web development, specially with React library and Next.js framework.</p>
-          <p>Im really into this area, so that i always look for creating even more amazing and performatic applications, aiming for a better user experience.</p>
+          <p>Im really into this area, so that i&apos;m always looking for creating even more amazing and performatic applications, aiming for a better user experience.</p>
         </div>
         <div>
-          <p>I also develop node.js based API`s, usually integrating with relational databases and docker.</p>
+          <p>I first started programming for robotics, but in middle 2020 I&apos; came across web development.</p>
+          <p>Since then, I&apos;ve been studying and developing each time more applications, with diferente features and goals.</p>
+        </div>
+        <div>
+          <p>I started to realize how powerfull programming skills could be, due to the variety of situations I could use it to my favor.
+          During my web lifetime, I&apos;ve created some websites, which are listed below ⬇️</p>
+          <ul>
+            <li>A graph software, which connects to a custom LiDAR and displays mapped data</li>
+            <li>A learning platform</li>
+            <li>A worldwide forecast application, with some fancy graphs</li>
+          </ul>
+        </div>
+        <div>
+          <p>I also develop node.js based API`s, usually integrating with relational databases and docker. Many os those backends have been deployed using a VPS, and in some cases the fronend as well.</p>
           <p>I am Industrial Automation Technician, graduated at&nbsp;
             <a href="https://ifrs.edu.br/riogrande/" target="_blank" rel="noreferrer">
               IFRS - Campus Rio Grande
             </a>
-            , with solid experience in the development of autunomous robots and intership in&nbsp; 
-            <a href="https://www.refinariariograndense.com.br/site/" target="_blank" rel="noreferrer">
-              Refinaria de Petróleo Riograndense
+            . During my highshool, I&apos;ve enrolled in a robotics project called ASiMov (Automation, Systems and Movement),
+            which provided my experience in the development of autunomous robots. The goal was to compete at the&nbsp;
+            <a href="https://www.obr.org.br/" target="_blank" rel="noreferrer">
+              Brasilian Robotics Olympics
             </a>
-            , on the instrumentation area.</p>
-        </div>
-        <div>
-          <p>In August 2021 I started a new position on&nbsp;
-            <a href="https://www.bytejr.com.br/" target="_blank" rel="noreferrer">
-              ByteJr
-            </a> 
-            , as a full stack developer. During the time I`ve spent there, I`ve worked with React (front-end)
-            and nodeJS + postgres (back-end).
-          </p>
-          <p>In April 2022 I had the pleasure of being applied to an university scholarship.
-            The project was organized by&nbsp;
-            <a href="http://itecfurg.org/" target="_blank" rel="noreferrer">
-              iTec - Furg
-            </a> 
-            , a computer science center. There, I have been given the oportunity to work alongside&nbsp; 
-            <a href="http://www.aurosrobotics.com/" target="_blank" rel="noreferrer">
-              Auros Robotics
-            </a>
-            , by improving their web site and developing a mobile app, that monitures agricultural data. 
+            .
           </p>
         </div>
         

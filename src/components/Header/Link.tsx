@@ -1,47 +1,40 @@
-import Router from 'next/router';
-import { useEffect, useState } from "react";
+import Router from 'next/router'
+import NextLink, { LinkProps as NextLinkProps } from 'next/link'
 
 import styles from './Header.module.scss'
+import { useEffect, useState } from 'react';
 
-interface LinkProps{
+interface LinkProps extends NextLinkProps{
   name: string;
-  href: string;
 }
 
 export function Link({name, href }:LinkProps){
   const [isActive, setIsActive] = useState(false);
-  
+ 
   useEffect(()=>{
-    if (typeof window !== "undefined") {
-      const isActiveInUrl = String('/'+href).includes(Router.asPath);
-      setIsActive(isActiveInUrl);
-      console.log(isActiveInUrl)
-      
-      window.addEventListener('scroll',(e)=>{
-        const section = document.querySelector(String(href));
-        // if(href=== '#about') console.log(e.)
-        if(section){
-          const { top, bottom } = section.getBoundingClientRect();
-          const topLimit = (window.innerHeight || document.documentElement.clientHeight) * 0.125;
-          const bottomLimit = window.innerHeight * 0.125;
-          setIsActive((state)=>{
-            const isInViewport = bottom > bottomLimit && top <= topLimit;
-            // if(isInViewport && !state) window.location.hash = href
-            return isInViewport
-          });
+    if(typeof window !== "undefined") setIsActive(Router.asPath.includes(String(href)));
+  },[setIsActive, href]);
+  
 
-          if(top < 1 && top >= 0 && window.location.href.includes(href)) window.scrollBy(0,top - window.innerHeight * 0.125)
-        }
-        else setIsActive(false);
-
-      });
-    }
-  },[href]);
-
+  if(isActive){
+    return(
+      <NextLink 
+        href={href} 
+        passHref 
+      >
+        <a className={styles.activeLink}>
+          {name}
+        </a>
+      </NextLink>
+    )
+  }
 
   return(
-    <a href={href} className={ isActive ? styles.activeLink : ''}>
-      {name}
-    </a>
+    <NextLink 
+      href={href} 
+      passHref 
+    >
+      <a>{name}</a>
+    </NextLink> 
   )
 }

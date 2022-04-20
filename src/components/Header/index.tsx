@@ -18,13 +18,13 @@ export function Header(){
   return(
     <div 
       className={styles.headerContainer}
-      style={{background: shouldBeTransparent ? 'rgba(58,58,58,0.9)' : 'unset'}}
+      // style={{background: shouldBeTransparent ? 'rgba(58,58,58,1)' : 'unset'}}
     >
       <span className={styles.name}>João Mello</span>
       <nav className={styles.nav}>
         <Link href='#about' name='About'/>
         <Link href='#experiences' name='Experiences'/>
-        <Link href='#projects' name='Project'/>
+        <Link href='#projects' name='Projects'/>
         <Link href='#contact' name='Contact'/>
       </nav>
     </div>

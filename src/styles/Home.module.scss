@@ -1,11 +1,18 @@
-$bg: #373737;
+$bg: #181820;
+
+
 
 .container {
   width: 100vw;
   max-width: 1440px;
-  
+  // height: 100vh;
+
   background: $bg;
   margin: 0 auto;
 
-  // overflow-y: scroll;
+  // overflow-x: hidden;
+  // scroll-margin-top: 12vh;
+
+  
 }
+

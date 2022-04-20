@@ -1,4 +1,4 @@
-$bgHeader: #585858;
+$bgHeader: #262628;
 
 .headerContainer{
   width: 100vw;
@@ -6,7 +6,7 @@ $bgHeader: #585858;
   height: 12.5vh;
 
   background: $bgHeader;
-
+  
   position: sticky;
   top: 0;
 
@@ -14,13 +14,22 @@ $bgHeader: #585858;
   align-items: center;
   padding: 0 4rem;
 
+  z-index: 1;
+
   transition: background 0.6s;
 }
 
 .name{
-  color: #FFFFFF;
-  font-size: 2rem;
-  font-weight: bold;
+  color: transparent;
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-family: 'Dancing Script';
+  padding: 0 0.6rem;
+
+  background: linear-gradient(45deg, #f9f9f9, #FF9517);
+  background-clip: text;
+  -webkit-background-clip: text;
+
 }
 
 .nav{
@@ -33,6 +42,8 @@ $bgHeader: #585858;
   a{
     color: #FFFFFF;
     font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
 
     display: flex;
     flex-direction: column;
@@ -41,6 +52,7 @@ $bgHeader: #585858;
     position: relative;
     
     transition: color 0.2s;
+
     &:hover{
       color: #FF9517;
     }

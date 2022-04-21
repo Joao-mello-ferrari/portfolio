@@ -1,14 +1,32 @@
+import { GetServerSideProps } from 'next'
 import { Experiences as ExperiencesComponent } from '../components/Experiences'
 import { Header } from '../components/Header'
 
 import styles from '../styles/Home.module.scss'
-export default function About(){
 
+interface ExperiencesProps{
+  host: string;
+}
+
+export default function About({ host }: ExperiencesProps){
+  console.log(host)
   return (
     <div className={styles.container}>
       <Header/>
-      <ExperiencesComponent/>
+      <ExperiencesComponent
+        host={host}
+      />
       
     </div>
   )
+}
+
+export const getServerSideProps: GetServerSideProps = async(req) =>{
+  const host = req?.req?.headers?.host;
+  
+  return{
+    props:{
+      host
+    }
+  }
 }

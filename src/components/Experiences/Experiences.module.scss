@@ -2,14 +2,16 @@
 
 .container{
   display: flex;
-  padding: 3rem 4rem;
+  padding: 2rem 6rem;
 
   color: #FFFFFF;
   font-size: 1.2rem;
 }
 
-.description{
+.timeline{
   width: 60%;
+  position: relative;
+  padding: 1rem 0 1rem 2rem;
   
   div{
     line-height: 1.8rem;
@@ -23,7 +25,7 @@
   }
 
   div + div{
-    margin-top: 2rem;
+    margin-top: 2.4rem;
   }
 
   ul{
@@ -47,31 +49,49 @@
   }
 }
 
-.avatarContainer{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+.line{
+  position: absolute;
+  left: -1rem;
+  height: 100%;
+  width: 0.4rem;
+  border-radius: 0.15rem;
+  background: #FFFFFF;
+}
+
+.iconsContainer{
+  position: relative;
+
   width: 40%;
   height: 55vh;
   padding-top: 3rem;
-  
-  margin-left: 2rem;
-  position: relative;
 
-  border-radius: 10rem;
-  overflow: hidden;
+  margin-left: 2rem;
   position: sticky;
   top: 22vh;
 
-  .avatar{
-    border-radius: 50%;
+  svg{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 10rem;
   }
 
-  .wave{
+  .book{
+    top: 45%;
+    left: 30%;
+  }
+
+  .cap{
+    width: 4rem;
+    height: 4rem;
+    background: $bg;
     position: absolute;
-    transform: scale(2.4);
-    top: 35%;
-    left: 25%;
+    top: 50%;
+    left: 45%
+  }
+
+  .clock{
+    top: 20%;
+    left: 50%
   }
   
 }

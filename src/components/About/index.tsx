@@ -17,7 +17,7 @@ export function About(){
         </div>
         <div>
           <p>I started to realize how powerfull programming skills could be, due to the variety of situations I could use it to my favor.
-          During my web lifetime, I&apos;ve created some websites, which are listed below ⬇️</p>
+          During my web lifetime, I&apos;ve created plenty of websites, some of which are listed below ⬇️</p>
           <ul>
             <li>A graph software, which connects to a custom LiDAR and displays mapped data</li>
             <li>A learning platform</li>

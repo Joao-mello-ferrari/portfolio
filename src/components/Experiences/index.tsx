@@ -1,13 +1,27 @@
 import Image from "next/image";
+import { Card } from "./Card";
+
+import { FiBook, FiClock } from "react-icons/fi";
 
 import styles from './Experiences.module.scss'
 
 export function Experiences(){
   return(
     <div className={styles.container}>
-      <section className={styles.description}>
-       
-      <div>
+      <section className={styles.timeline}>
+      <div className={styles.line}/>
+        <div>
+          <Card
+
+          />
+          <Card
+
+          />
+          <Card
+
+          />
+        </div>
+      {/* <div>
           <p>In August 2021 I started a new position on&nbsp;
             <a href="https://www.bytejr.com.br/" target="_blank" rel="noreferrer">
               ByteJr
@@ -32,28 +46,14 @@ export function Experiences(){
               Refinaria de Petróleo Riograndense
             </a>
             , on the instrumentation area.</p>
-        </div>
+        </div> */}
         
       </section>
-      <section className={styles.avatarContainer}>
-        <div className={styles.wave}>
-          <Image 
-            src='/assets/wave.svg' 
-            alt='wave-background'
-            width={240}
-            height={240}
-          />
-        </div>
-        <Image 
-          className={styles.avatar}
-          src='https://avatars.githubusercontent.com/u/67838782?v=4' 
-          alt='my-self'
-          width={240}
-          height={240}
-        />
-        
+      <section className={styles.iconsContainer}>
+        <FiClock className={styles.clock}/>
+        <div className={styles.cap}/>
+        <FiBook className={styles.book}/>
       </section>
     </div>
-    
   )
 }

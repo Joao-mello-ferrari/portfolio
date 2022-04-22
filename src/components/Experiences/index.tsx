@@ -4,6 +4,7 @@ import { Card } from "./Card";
 import { FiBook, FiClock } from "react-icons/fi";
 
 import styles from './Experiences.module.scss'
+import cStyles from '../Common.module.scss'
 
 interface ExperiencesProps{
   host: string;
@@ -11,7 +12,7 @@ interface ExperiencesProps{
 
 export function Experiences({ host }:ExperiencesProps){
   return(
-    <div className={styles.container}>
+    <div className={cStyles.container}>
       <section className={styles.timeline}>
       <div className={styles.line}/>
         <div>

@@ -6,29 +6,48 @@
   gap: 2.4rem;
   padding: 3rem 4rem;
 
-  color: #FFFFFF;
+  color: $text;
   font-size: 1.2rem;
 }
 
-.links{
+.bottomInfoContainer{
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
 
-  & + div{
-    margin-top: 0.25rem;
+  .techs{
+    background: $bgHeader;
+    padding: 0.6rem 0.8rem;
+    margin-top: -0.6rem;
+    border-radius: 0.4rem;
+    height: fit-content;
+    align-self: flex-end;
   }
 
-  svg{
-    margin-right: 0.4rem;
-    color: $theme;
-  }
-
-  a{
-    color: #FFFFFF;
-    &:hover{
+  .links{
+    display: flex;
+    align-items: center;
+  
+    & + div{
+      margin-top: 0.25rem;
+    }
+  
+    svg{
+      margin-right: 0.4rem;
       color: $theme;
-      text-decoration: none;
+    }
+  
+    a{
+      color: $text;
+      &:hover{
+        color: $theme;
+        text-decoration: none;
+      }
+    }
+
+    span + span{
+      margin-left: 0.4rem;
     }
   }
-  
+
 }

@@ -22,13 +22,6 @@ a {
   box-sizing: border-box;
 }
 
-/* :target:before {
-  content: "sdasdasdas";
-  display: block;
-  height: 200px;
-  margin: -200px 0 0;
-} */
-
 ::-webkit-scrollbar {
   width: 0.6em;
 }

@@ -37,11 +37,11 @@
   }
 
   a{
-    color: $text;
+    color: $text!important;
     font-size: 1.4rem;
     &:hover{
-      color: $theme;
-      text-decoration: none;
+      color: $theme!important;
+      text-decoration: none!important;
     }
   }
 }
@@ -80,5 +80,24 @@
   .phone{
     top: 20%;
     left: 50%
+  }
+}
+
+@media(max-width: 768px){
+  .container{
+    height: unset;
+    min-height: 87.5vh;
+    padding: 2rem;
+  }
+
+  .description{
+    width: 100%;
+    padding-left: 0rem;
+    margin: auto 0;
+  }
+
+  .iconsContainer{
+    display: none;
+    visibility: hidden;
   }
 }

@@ -73,3 +73,20 @@
   }
 }
 
+@media(max-width: 768px){
+  .timeline{
+    width: 100%;
+    padding: 2rem 0 3rem 2rem;
+  }
+
+  .line{
+    left: 0;
+    height: 99%;
+  }
+
+  .iconsContainer{
+    display: none;
+    visibility: hidden;
+  }
+}
+

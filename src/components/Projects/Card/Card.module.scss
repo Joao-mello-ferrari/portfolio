@@ -20,12 +20,6 @@
     text-decoration: underline;
   }
 
-  .info{
-    color: $theme;
-    font-size: 1.8rem;
-    font-weight: 500;
-  }
-
   p + a, p + p{
     margin-top: -0.4rem!important;
   }
@@ -35,25 +29,57 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.4rem;
-}
-
-.dateContainer{
-  display: flex;
-  align-items: center;
-  background: $bgHeader;
-  padding: 0.2rem 0.6rem;
-  border-radius: 0.4rem;
-
   
-
-  span{
-    font-size: 1.2rem!important;
-    font-weight: 400!important;
-    color: $text!important;
+  .info{
+    color: $theme;
+    font-size: 1.8rem;
+    font-weight: 500;
   }
 
-  svg{
-    margin-right: 0.5rem;
-    color: $text;
+  .dateContainer{
+    display: flex;
+    align-items: center;
+    background: $bgHeader;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.4rem;
+  
+    
+  
+    span{
+      font-size: 1.2rem!important;
+      font-weight: 400!important;
+      color: $text!important;
+    }
+  
+    svg{
+      margin-right: 0.5rem;
+      color: $text;
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .cardContainer{
+    padding: 1.4rem;
+  }
+
+  .mainInfo .info{
+    font-size: 1.4rem;
+  }
+
+  .mainInfo .dateContainer{
+    background: $bgHeader;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.4rem;
+    margin-top: -0.1rem;
+  
+    span{
+      font-size: 0.8rem!important;
+    }
+  
+    svg{
+      margin-right: 0.4rem;
+      font-size: 0.8rem;
+    }
   }
 }

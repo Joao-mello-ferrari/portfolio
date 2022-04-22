@@ -14,7 +14,7 @@ export function Contact(){
         <div className={styles.singleContactContainer}>
           <FiLinkedin/>
           <a href="https://www.linkedin.com/in/joao-mello-ferrari/" target="_blank" rel="noreferrer">
-              Linkedin
+            Linkedin
           </a>
         </div>
 

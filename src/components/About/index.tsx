@@ -6,6 +6,28 @@ import cStyles from '../Common.module.scss'
 export function About(){
   return(
     <div className={cStyles.container}>
+      <section className={styles.mobileAvatarContainer}>
+        <div className={styles.waveContainer}>
+          <div className={styles.wave}>
+            <Image 
+              src='/assets/wave.svg' 
+              alt='wave-background'
+              width={160}
+              height={160}
+            />
+          </div>
+        </div>
+        <div className={styles.avatar}>
+          <Image 
+            src='https://avatars.githubusercontent.com/u/67838782?v=4' 
+            alt='my-self'
+            width={240}
+            height={240}
+          />
+        </div>
+        
+      </section>
+
       <section className={styles.description}>
        
         <div>
@@ -41,7 +63,8 @@ export function About(){
         </div>
         
       </section>
-      <section className={styles.avatarContainer}>
+      
+      <section className={styles.webAvatarContainer}>
         <div className={styles.wave}>
           <Image 
             src='/assets/wave.svg' 
@@ -57,7 +80,6 @@ export function About(){
           width={240}
           height={240}
         />
-        
       </section>
     </div>
     

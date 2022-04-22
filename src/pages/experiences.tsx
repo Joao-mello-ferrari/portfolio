@@ -9,7 +9,7 @@ interface ExperiencesProps{
 }
 
 export default function About({ host }: ExperiencesProps){
-  console.log(host)
+ 
   return (
     <div className={styles.container}>
       <Header/>

@@ -34,7 +34,7 @@ export function Experiences({ host }:ExperiencesProps){
           </Card>
 
           <Card date="September - November 2019" name="Estagio">
-            <p>I enrolled in an intership &nbsp;
+            <p>I enrolled in an intership&nbsp;
               <a href="https://www.refinariariograndense.com.br/site/" target="_blank" rel="noreferrer">
                 Refinaria de Petróleo Riograndense
               </a>

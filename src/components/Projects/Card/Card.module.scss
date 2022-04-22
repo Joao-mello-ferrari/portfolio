@@ -1,0 +1,59 @@
+@import '../../../styles/variables';
+
+.cardContainer{
+  box-shadow: 0 0 0.4rem rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  line-height: 1.8rem;
+
+  p{
+    margin-bottom: 2rem;
+  }
+
+  a{
+    color: $theme;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .info{
+    color: $theme;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  p + a, p + p{
+    margin-top: -0.4rem!important;
+  }
+}
+
+.mainInfo{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.dateContainer{
+  display: flex;
+  align-items: center;
+  background: $bgHeader;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.4rem;
+
+  
+
+  span{
+    font-size: 1.2rem!important;
+    font-weight: 400!important;
+    color: $text!important;
+  }
+
+  svg{
+    margin-right: 0.5rem;
+    color: $text;
+  }
+}

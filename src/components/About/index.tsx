@@ -1,10 +1,11 @@
 import Image from "next/image";
 
 import styles from './About.module.scss'
+import cStyles from '../Common.module.scss'
 
 export function About(){
   return(
-    <div className={styles.container}>
+    <div className={cStyles.container}>
       <section className={styles.description}>
        
         <div>

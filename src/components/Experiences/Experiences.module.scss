@@ -66,6 +66,7 @@
 
   div{
     width: 30%;
+    margin-left: 1rem;
   }
 
   img{
@@ -87,6 +88,25 @@
   .iconsContainer{
     display: none;
     visibility: hidden;
+  }
+
+  .obr{
+    flex-direction: column;
+  
+    p{
+      width: 100%;
+    }
+  
+    div{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-left: 0;
+    }
+  
+    img{
+      border-radius: 1rem;
+    }
   }
 }
 

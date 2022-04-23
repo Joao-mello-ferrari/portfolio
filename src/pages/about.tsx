@@ -6,6 +6,7 @@ export default function About(){
 
   return (
     <div className={styles.container}>
+      
       <Header/>
       <AboutComponent />
     </div>

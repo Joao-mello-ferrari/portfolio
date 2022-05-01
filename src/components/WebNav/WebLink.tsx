@@ -1,14 +1,14 @@
 import Router from 'next/router'
 import NextLink, { LinkProps as NextLinkProps } from 'next/link'
 
-import styles from './Header.module.scss'
+import styles from './Webnav.module.scss'
 import { useEffect, useState } from 'react';
 
 interface LinkProps extends NextLinkProps{
   name: string;
 }
 
-export function Link({name, href }:LinkProps){
+export function WebLink({name, href }:LinkProps){
   const [isActive, setIsActive] = useState(false);
  
   useEffect(()=>{
@@ -22,7 +22,7 @@ export function Link({name, href }:LinkProps){
         href={href} 
         passHref 
       >
-        <a className={styles.activeLink}>
+        <a className={styles.webActiveLink}>
           {name}
         </a>
       </NextLink>

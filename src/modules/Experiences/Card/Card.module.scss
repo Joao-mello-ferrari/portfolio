@@ -27,19 +27,16 @@
 
   a{
     color: $theme;
+    &:hover{ text-decoration: underline; }
   }
-  a:hover{
-    text-decoration: underline;
-  }
+  
 
-  .date{
-    color: $theme;
-  }
+  .date{ color: $theme; }
 
-  p + a, p + p{
-    margin-top: -0.4rem!important;
-  }
-
+  p + a, 
+  p + p, 
+  span + div, 
+  span + p{  margin-top: 1rem; }
 }
 
 

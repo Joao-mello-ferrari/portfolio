@@ -1,7 +1,7 @@
 import Router from 'next/router'
 import NextLink, { LinkProps as NextLinkProps } from 'next/link'
 
-import styles from './Link.module.scss'
+import styles from './Mobilenav.module.scss'
 import { useEffect, useState } from 'react';
 import { useSidebarDrawer } from '../../contexts/sidebarDrawer';
 
@@ -25,7 +25,7 @@ export function MobileLink({name, href }:LinkProps){
         href={href} 
         passHref 
       >
-        <a className={styles.activeLink}>
+        <a className={styles.mobileActiveLink}>
           {name}
         </a>
       </NextLink>

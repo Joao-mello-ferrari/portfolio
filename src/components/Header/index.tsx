@@ -1,7 +1,7 @@
 import Router from 'next/router'
 
-import { Link } from './Link'
 import { BurgerMenu } from './BurgerMenu'
+import { WebNav } from '../WebNav'
 
 import styles from './Header.module.scss'
 
@@ -12,12 +12,7 @@ export function Header(){
 
       <span className={styles.name}>João Mello</span>
       
-      <nav className={styles.webNav}>
-        <Link href='/about' name='About'/>
-        <Link href='/experiences' name='Experiences'/>
-        <Link href='/projects' name='Projects'/>
-        <Link href='/contact' name='Contact'/>
-      </nav>
+      <WebNav/>
     </div>
   )
 }

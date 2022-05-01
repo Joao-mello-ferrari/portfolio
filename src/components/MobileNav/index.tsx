@@ -1,6 +1,6 @@
 import { MobileLink } from "./MobileLink";
 
-import styles from './Link.module.scss'
+import styles from './Mobilenav.module.scss'
 
 export function MobileNav(){
   return(

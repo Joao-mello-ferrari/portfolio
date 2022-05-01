@@ -24,8 +24,6 @@ export function SidebarDrawer() {
       >
         <DrawerOverlay />
         <DrawerContent>
-          {/* <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader> */}
 
           <DrawerBody
             display="flex"

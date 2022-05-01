@@ -1,7 +1,8 @@
 import { GetServerSideProps } from 'next'
-import { Experiences as ExperiencesComponent } from '../components/Experiences'
 import { Header } from '../components/Header'
 import { SidebarDrawer } from '../components/MobileSidebar';
+import { Experiences as ExperiencesModule } from '../modules/Experiences'
+import { Footer } from '../components/Footer';
 
 import styles from '../styles/Home.module.scss'
 
@@ -15,10 +16,8 @@ export default function About({ host }: ExperiencesProps){
     <div className={styles.container}>
       <Header/>
       <SidebarDrawer/>
-      <ExperiencesComponent
-        host={host}
-      />
-      
+      <ExperiencesModule host={host}/>
+      <Footer/>
     </div>
   )
 }

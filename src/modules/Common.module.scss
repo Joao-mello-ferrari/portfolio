@@ -9,17 +9,15 @@
 
   a{
     color: $theme;
-  }
-  a:hover{
-    text-decoration: underline;
+    &:hover{ text-decoration: underline; }
   }
 
   ul{
     list-style: none; /* Remove default bullets */
+    margin: 1rem 0 0 2rem;
     
-    li + li{
-      margin-top: 0.4rem;
-    }
+    
+    li + li{ margin-top: 0.4rem; }
     
     li::before {
       // content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */

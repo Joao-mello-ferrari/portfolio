@@ -1,6 +1,6 @@
-import { Contact as ContactComponent } from '../components/Contact'
 import { Header } from '../components/Header'
 import { SidebarDrawer } from '../components/MobileSidebar'
+import { Contact as ContactModule } from '../modules/Contact'
 
 import styles from '../styles/Home.module.scss'
 
@@ -9,7 +9,7 @@ export default function Contact(){
     <div className={styles.container}>
       <Header/>
       <SidebarDrawer/>
-      <ContactComponent />
+      <ContactModule />
     </div>
   )
 }

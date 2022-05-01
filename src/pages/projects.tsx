@@ -1,6 +1,7 @@
 import { Header } from '../components/Header'
 import { SidebarDrawer } from '../components/MobileSidebar'
-import { Projects as ProjectsComponent} from '../components/Projects'
+import { Projects as ProjectsModule} from '../modules/Projects'
+import { Footer } from '../components/Footer'
 
 import styles from '../styles/Home.module.scss'
 
@@ -9,7 +10,8 @@ export default function Projects(){
     <div className={styles.container}>
       <Header/>
       <SidebarDrawer/>
-      <ProjectsComponent />
+      <ProjectsModule />
+      <Footer/>
     </div>
   )
 }

@@ -1,7 +1,6 @@
 @import '../../styles/variables';
 
 .mobileNav{
-  display: flex;
   flex-direction: column;
 
   background: transparent;
@@ -10,6 +9,9 @@
   font-size: 1.6rem;
   font-weight: 600;
   text-align: left;
+
+  display: none;
+  visibility: hidden;
   
   a{
     padding: 0.3rem 0.8rem;
@@ -21,8 +23,15 @@
     }
   }
 
-  .activeLink{
+  .mobileActiveLink{
     background: #414145;
     color: $theme;
+  }
+}
+
+@media(max-width: 768px){
+  .mobileNav{
+    visibility: visible;
+    display: flex;
   }
 }

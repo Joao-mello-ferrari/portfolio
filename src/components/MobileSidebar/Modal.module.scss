@@ -1,0 +1,57 @@
+.customModal {
+  position: absolute;
+  top: 12.5vh;
+  left: 0vw;
+  right: 0vw;
+  bottom: -50vh;
+  background-color: #EEEEEE;
+  // overflow: scroll;
+  // border-radius: 0.25rem;
+}
+
+.customModal span{
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+
+  font-size: 1.2rem;
+}
+
+.customOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75)
+}
+
+.modalContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 2rem;
+}
+
+.modalContainer .modal-ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: top;
+}
+
+.modalContainer .modal-ul + .modal-ul{
+  margin-left: 1rem;
+}
+
+.modalContainer .modal-ul li{
+  font-size: 1rem;
+}
+
+.modalContainer .modal-ul li + li{
+  margin-top: 0.8rem;
+}

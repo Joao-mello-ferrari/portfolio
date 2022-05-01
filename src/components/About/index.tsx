@@ -5,7 +5,7 @@ import cStyles from '../Common.module.scss'
 
 export function About(){
   return(
-    <div className={cStyles.container}>
+    <div className={cStyles.container} style={{overflow: 'hidden'}}>
       <section className={styles.mobileAvatarContainer}>
         <div className={styles.waveContainer}>
           <div className={styles.wave}>

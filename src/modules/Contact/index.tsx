@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 import { FiLinkedin, FiYoutube, FiGithub, 
   FiInstagram, FiTwitter, FiMail, FiBook, FiPhoneCall } from 'react-icons/fi'
@@ -7,6 +7,8 @@ import styles from './Contact.module.scss'
 import cStyles from '../Common.module.scss'
 
 export function Contact(){
+  const { t: contact } = useTranslation('contact');
+
   return(
     <div className={`${cStyles.container} ${styles.container}`}>
       <section className={styles.description}>
@@ -49,13 +51,10 @@ export function Contact(){
         <div className={styles.singleContactContainer}>
           <FiMail/>
           <a href="mailto: joao.vico.mellof@gmail.com" target="_blank" rel="noreferrer">
-              Send me and e-mail!
+              {contact('email')}
           </a>
         </div>
        </div>
-       
-       
-        
         
       </section>
       <section className={styles.iconsContainer}>

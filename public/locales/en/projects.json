@@ -1,0 +1,41 @@
+{
+  "eforecast":{
+    "name": "e.forecast",
+    "date": "May 2022",
+    "content_1": "One day I was looking for the weather forecast noticed the lack of beautiful forecast websites available on the internet. Therefore, I came across the ideia of an application with fancy graphs and a nicier layout, using the",
+    "content_2": "api as data provider.",
+    "link_1": "Open Weather Map"
+  },
+  "elearning":{
+    "name": "e.learning",
+    "date": "March 2022",
+    "content": "In order to practice and stablish a solid connection with the next.js way of coding, I decided to develop a web application. Still, education is such an amazing area, and creating online tools so people can study in a better way is always nice."
+  },
+  "calendar":{
+    "name": "Calendar",
+    "date": "February 2022",
+    "content": "The idea of this project is to mock a calendar application, in which the user can register, retrieve and delete events. The interface is the computer terminal, and all of the magic happens there."
+  },
+  "navy":{
+    "name": "Black Navy War",
+    "date": "January 2022",
+    "content_1": "This is a beta version of the",
+    "content_2": " game. This time, I focused on creating a more difficult game, with plenty of features.",
+    "link_1": "Black Navy War"
+  },
+  "dino":{
+    "name": "Chrome Dino",
+    "date": "November 2021",
+    "content_1": "This is a beta version of the",
+    "content_2": ". The idea of this project was to developed skills with games, that don't necessarily run on web.",
+    "link_1": "Chrome Dino game"
+  },
+  "tcc":{
+    "name": "Mapping graph",
+    "date": "September 2021",
+    "content": "Graph software developed for my high shool final paper. It's purpose is to display the 2D mapping performed by a LiDAR sensor."
+  },
+  "git": "Github repo",
+  "online": "Project online",
+  "youtube": "YouTube video"
+}

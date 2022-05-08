@@ -1,0 +1,66 @@
+{
+  "obr":{
+    "date": "August 2019",
+    "content": "I participated in the OBR (Olimpíada Brasileira de Robótica). The goal of the competition was to develop autonomous robots and complete the applied challenges."
+  },
+  "internship":{
+    "date": "September - November 2019",
+    "content_1": "I enrolled in an intership in",
+    "content_2": ". During those 3 months, I was able to learn much about instrumentation, by fixing devices such as manometers and programming in the Delta-V software.",
+    "link_1": "Refinaria de Petróleo Riograndense"
+  },
+  "obr_2":{
+    "date": "September 2019",
+    "content": "I participated in the OBR for a second time, but now for a theorical test. The goal was to answer questions about robotics in general, and fortunately I was able to achive a high rank, which granted me a gold medal."
+  },
+  "igti":{
+    "date": "August 2020",
+    "content": "I finished my first full stack web course, in the IGTI institute. This is where all my passion for web development started. Here I learned the web fundamentals, but already managed to create some applications."
+  },
+  "asimov":{
+    "date": "August 2020 - March 2021",
+    "content_1": "I participed in the ASiMov project, which allowed me to experience how the base os robotics was, back in the day. Our goal was to build autonomous robots pretty much from scratch, by using 3D design softwares (such as ",
+    "content_2": ") and Arduino/ESP 32 boards with C++ language.",
+    "link_1": "onShape"
+  },
+  "gostack":{
+    "date": "November 2020",
+    "content_1": "Now is when things started to get intense, regarding to web development. For my 19th anniversary, I asked my father to gift me with a longer web development course.",
+    "content_2": "The insitute was",
+    "content_3": ", and since then I have not lost a single oportunity to learn with them. This time, I learned not only to develop simple applications, but also complex systems and how to deploy them all.",
+    "link_1": "Rocketseat"
+  },
+  "tcc":{
+    "date": "November 2021",
+    "content_1": "Since my highschool degree is also for Automation Technician, I had to produce a final paper.",
+    "content_2": "I got together with two mates to do so,",
+    "content_3": "and",
+    "content_4": ". Our project consisted in a LiDAR sensor, which scans small ambients in 2D.",
+    "content_5": "In order to visualize the data collected by the sensor, a graph software was build. In a nutshell, the interface was a website built with react, whose function was to receive the current data and plot it as a radar graph.",
+    "link_1": "Felipe Machado",
+    "link_2": "Rafael Machado",
+    "article": "Check our article out!"
+  },
+  "bytejr":{
+    "date": "August 2021",
+    "content_1": "I started a new position on",
+    "content_2": ", as a full stack developer. During the time I`ve spent there, I`ve worked with React (front-end) and nodeJS + postgres (back-end).",
+    "link_1": "ByteJr"
+  },
+  "dowhile":{
+    "date": "December 2021",
+    "content_1": "I participated in a tech event, hosted by",
+    "content_2": ". During days 1 and 2, I was able to watch speeches about programming languages, new methodologies, and get in touch with new people.",
+    "content_3": "Probably the strongest thing about this event was to comprehend how huge, diverse and united our tech ecosystem is.",
+    "link_1": "Rocketseat"
+  },
+  "itec":{
+    "date": "April 2022",
+    "content_1": "I had the pleasure of being applied to an university scholarship. The project was organized by",
+    "content_2": ", a computer science center. There, I have been given the oportunity to work alongside",
+    "content_3": ", by improving their web site and developing a mobile app, that monitures agricultural data.",
+    "link_1": "iTec - Furg",
+    "link_2": "Auros Robotics"
+  },
+  "certificate": "Certificate here"
+}

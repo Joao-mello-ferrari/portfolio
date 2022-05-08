@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
 
-import { ChakraProvider } from '@chakra-ui/react'
-import { SidebarDrawerProvider } from '../contexts/sidebarDrawer'
+import { appWithTranslation } from 'next-i18next';
+import { AllContextsProvider } from '../contexts'
 
 import '../styles/globals.css'
 
@@ -13,13 +13,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>João Mello</title>
       </Head>
       
-      <ChakraProvider>
-        <SidebarDrawerProvider>
+      <AllContextsProvider>
           <Component {...pageProps} />
-        </SidebarDrawerProvider>
-      </ChakraProvider>
+      </AllContextsProvider>
     </>
   )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp);

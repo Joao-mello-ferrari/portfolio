@@ -1,0 +1,9 @@
+{
+  "nav":{
+    "about": "Sobre",
+    "experiences": "Experiências",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "footer": "Desenvolvido por @João Mello - Atualizado em 05/2021" 
+}

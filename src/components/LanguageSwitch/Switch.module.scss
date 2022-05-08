@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+
+.switchContainer{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.langContainer{
+  margin-left: 0.6rem;
+  margin-bottom: auto;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.lang{
+  position: relative;
+  width: 1.6rem;
+  height: 1rem;
+  background: yellow;
+}

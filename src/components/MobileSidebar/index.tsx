@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react'
 
 import { MobileNav } from '../MobileNav';
+import { LanguageSwitch } from '../LanguageSwitch';
 
 export function SidebarDrawer() {
   const { isOpen, onClose } = useSidebarDrawer();
@@ -24,7 +25,14 @@ export function SidebarDrawer() {
       >
         <DrawerOverlay />
         <DrawerContent>
-
+          <DrawerHeader
+            display="flex"
+            justifyContent="flex-end"
+            alignItems="center"
+            background="#262628"
+          >
+            <LanguageSwitch/>
+          </DrawerHeader>
           <DrawerBody
             display="flex"
             justifyContent="flex-start"

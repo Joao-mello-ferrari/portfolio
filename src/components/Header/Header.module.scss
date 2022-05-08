@@ -95,8 +95,14 @@
 } 
 
 @media(max-width: 768px){
+  
   .headerContainer{
     padding: 0 1.4rem;
+
+    .headerSwitch{
+      display: none!important;
+      visibility: hidden;
+    }
   }
 
   .name{

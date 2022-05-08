@@ -1,3 +1,5 @@
+import { useTranslation } from "next-i18next";
+
 import Image from "next/image";
 import { Card } from "./Card";
 
@@ -11,17 +13,17 @@ interface ExperiencesProps{
 }
 
 export function Experiences({ host }:ExperiencesProps){
+  const { t: exp } = useTranslation('experiences');
+  
   return(
     <div className={cStyles.container}>
       <section className={styles.timeline}>
       <div className={styles.line}/>
         <div>
 
-          <Card date="August 2019" name="OBR pratica">
+          <Card date={exp('obr.date')} name="OBR pratica">
             <div className={styles.obr}>
-              <p>I participated in the OBR (Olimpíada Brasileira de Robótica).
-                The goal of the competition was to develop autonomous robots and complete the applied challenges.
-              </p>
+              <p>{exp('obr.content')}</p>
               <div>
                 <Image
                   src="/assets/asimov.jpg"
@@ -33,129 +35,109 @@ export function Experiences({ host }:ExperiencesProps){
             </div>
           </Card>
 
-          <Card date="September - November 2019" name="Estagio">
-            <p>I enrolled in an intership&nbsp;
+          <Card date={exp('internship.date')} name="Estagio">
+            <p>{exp('internship.content_1')}
               <a href="https://www.refinariariograndense.com.br/site/" target="_blank" rel="noreferrer">
-                Refinaria de Petróleo Riograndense
+              &nbsp;{exp('internship.link_1')}
               </a>
-              . During those 3 months, I was able to lern much about instrumentation, by fixing devices such
-              as manometers and programming in the Delta-V software.
+              {exp('internship.content_2')}
             </p>
           </Card>
 
-          <Card date="September 2019" name="OBR teorica">
-            <p>I participated in the OBR for a second time, but now for a theorical test.
-              The goal was to answer questions about robotics in general, and fortunately I was able
-              to achive a high rank, which granted me a gold medal.
+          <Card date={exp('obr_2.date')} name="OBR teorica">
+            <p>{exp('obr_2.content')}
             </p>
             <a href={`http://${host}/certificates/obr`} target="_blank" rel="noreferrer">
-              Certificate here
+            {exp('certificate')}
             </a>
           </Card>
 
-          <Card date="August 2020" name="IGTI">
-            <p>I finished my first full stack web course, in the IGTI institute.
-              This is where all my passion for web development started.
-              Here I learned the web fundamentals, but already managed to create some applications.
+          <Card date={exp('igti.date')} name="IGTI">
+            <p>{exp('igti.content')}
             </p>
             <a href={`http://${host}/certificates/igti`} target="_blank" rel="noreferrer">
-              Certificate here
+            {exp('certificate')}
             </a>
           </Card>
 
-          <Card date="August 2020 - March 2021" name="ASIMOV">
-            <p>I participed in the ASiMov project, which allowed me to experience
-              how the base os robotics was, back in the day.
-              Our goal was to build autonomous robots pretty much from scratch, by using
-              3D design softwares (such as&nbsp;
+          <Card date={exp('asimov.date')} name="ASIMOV">
+            <p>{exp('asimov.content_1')}&nbsp;
               <a href="https://www.onshape.com" target="_blank" rel="noreferrer">
-                onShape
+              {exp('asimov.link_1')}
               </a> 
-              ) and Arduino/ESP 32 boards with C++ language.
+              {exp('asimov.content_2')}
             </p>
             <a href={`http://${host}/certificates/asimov`} target="_blank" rel="noreferrer">
-              Certificate here
+            {exp('certificate')}
             </a>
           </Card>
 
-          <Card date="November 2020" name="gostack">
-            <p>Now is when things started to get intense, regarding to web development.
-              For my 19th anniversary, I asked my father to gift me with a longer web development course.
+          <Card date={exp('gostack.date')} name="gostack">
+            <p>{exp('gostack.content_1')}
             </p>
-            <p>The insitute was&nbsp;  
+            <p>{exp('gostack.content_2')}&nbsp;  
               <a href="https://rocketseat.com.br/" target="_blank" rel="noreferrer">
-                Rocketseat
+              {exp('gostack.link_1')}
               </a>
-              , and since then I have not lost a single oportybity to learn with them.
-              This time, I learned not only to develop simple applications, 
-              but also complex systems and how to deploy them all.
+              {exp('gostack.content_3')}
             </p>
             <a href={`http://${host}/certificates/gostack`} target="_blank" rel="noreferrer">
-              Certificate here
+            {exp('certificate')}
             </a>
           </Card>
 
-          <Card date="November 2021" name="tcc">
-            <p>Since my highschool degree is also for Automation Technician, 
-              I had to produce a final paper, which would represent my aknowledge 
-              of the technical subject.
-            </p> 
-            <p>I got together with two mates to do so,&nbsp;
+          <Card date={exp('tcc.date')} name="tcc">
+            <p>{exp('tcc.content_1')}</p> 
+            <p>{exp('tcc.content_2')}&nbsp;
               <a href="https://www.instagram.com/hipnoterapeuta_felipe/" target="_blank" rel="noreferrer">
-                Felipe Machado
+              {exp('tcc.link_1')}
               </a>   
-              &nbsp;and&nbsp; 
+              &nbsp;{exp('tcc.content_3')}&nbsp; 
               <a href="https://www.instagram.com/rhuszcza/" target="_blank" rel="noreferrer">
-              Rafael Machado
+              {exp('tcc.link_2')}
               </a>
-              . Our project consisted in a LiDAR sensor, which scans small ambients in 2D.
+              {exp('tcc.content_4')}
             </p>
-            <p>In order to visualize the data collected by the sensor, a graph software was build.
-              In a nutshell, the interface was a website built with react, whose function was to receive
-              the current data and plot it as a radar graph.
+            <p>{exp('tcc.content_5')}
             </p>
             <a href={`http://${host}/certificates/tcc`} target="_blank" rel="noreferrer">
-              Check our article out!
+            {exp('tcc.article')}
             </a>
           </Card>
 
-          <Card date="August 2021" name="bytejr">
-            <p>I started a new position on&nbsp;
+          <Card date={exp('bytejr.date')} name="bytejr">
+            <p>{exp('bytejr.content_1')}&nbsp;
               <a href="https://www.bytejr.com.br/" target="_blank" rel="noreferrer">
-                ByteJr
+              {exp('bytejr.link_1')}
               </a> 
-              , as a full stack developer. During the time I`ve spent there, I`ve worked with React (front-end)
-              and nodeJS + postgres (back-end).
+              {exp('bytejr.content_2')}
             </p>
           </Card>
 
-          <Card date="December 2021" name="dowhile">
-            <p>I participated in a tech event, hosted by&nbsp;
+          <Card date={exp('dowhile.date')} name="dowhile">
+            <p>{exp('dowhile.content_1')}&nbsp;
               <a href="https://rocketseat.com.br/" target="_blank" rel="noreferrer">
-                Rocketseat
+              {exp('dowhile.link_1')}
               </a> 
-              . During days 1 and 2, I was able to watch speeches about programming languages,
-              new methodologies, and get in touch with new people.
+              {exp('dowhile.content_2')}
             </p>
-            <p>Probably the strongest thing about this event was to comprehend how 
-              huge, diverse and united our tech ecosystem is.
+            <p>{exp('dowhile.content_3')}
             </p>
             <a href={`http://${host}/certificates/dowhile`} target="_blank" rel="noreferrer">
-              Certificate here
+            {exp('certificate')}
             </a>
           </Card>
           
-          <Card date="April 2022" name="itec">
-            <p>I had the pleasure of being applied to an university scholarship.
-              The project was organized by&nbsp;
+          <Card date={exp('itec.date')} name="itec">
+            <p>{exp('itec.content_1')}&nbsp;
               <a href="http://itecfurg.org/" target="_blank" rel="noreferrer">
-                iTec - Furg
+              {exp('itec.link_1')}
               </a> 
-              , a computer science center. There, I have been given the oportunity to work alongside&nbsp; 
+              {exp('itec.content_2')}&nbsp; 
               <a href="http://www.aurosrobotics.com/" target="_blank" rel="noreferrer">
-                Auros Robotics
+              {exp('itec.link_2')}
               </a>
-              , by improving their web site and developing a mobile app, that monitures agricultural data. 
+              {exp('itec.content_3')}
             </p>
           </Card>
         </div>

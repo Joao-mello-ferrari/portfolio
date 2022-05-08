@@ -1,9 +1,13 @@
 import Image from "next/image";
 
+import { useTranslation } from 'next-i18next';
+
 import styles from './About.module.scss'
 import cStyles from '../Common.module.scss'
 
 export function About(){
+  const { t: about } = useTranslation('about');
+
   return(
     <div className={cStyles.container}>
       <section className={styles.mobileAvatarContainer}>
@@ -31,38 +35,36 @@ export function About(){
       <section className={styles.description}>
        
         <div>
-          <p>My go to work is web development, specially with React library and Next.js framework.</p>
-          <p>I&apos;m really into this area, so that i&apos;m always looking for creating even more amazing and performatic applications, aiming for a better user experience.</p>
+          <p>{about('t_1')}</p>
+          <p>{about('t_2')}</p>
         </div>
         
         <div>
-          <p>I first started programming for robotics, but in middle 2020 I&apos; came across web development.</p>
-          <p>Since then, I&apos;ve been studying and developing each time more applications, with diferente features and goals.</p>
+          <p>{about('t_3')}</p>
+          <p>{about('t_4')}</p>
         </div>
         
         <div>
-          <p>I started to realize how powerfull programming skills could be, due to the variety of situations I could use it to my favor.
-          During my web lifetime, I&apos;ve created plenty of websites, some of which are listed below ⬇️</p>
+          <p>{about('t_5')} ⬇️</p>
           <ul>
-            <li>A graph software, which connects to a custom LiDAR and displays mapped data</li>
-            <li>A learning platform</li>
-            <li>A worldwide forecast application, with some fancy graphs</li>
+            <li>{about('list_1')}</li>
+            <li>{about('list_2')}</li>
+            <li>{about('list_3')}</li>
           </ul>
         </div>
         
         <div>
-          <p>I also develop node.js based API`s, usually integrating with relational databases and docker. Many os those backends have been deployed using a VPS, and in some cases the fronend as well.</p>
+          <p>{about('t_6')}</p>
         </div>
         
         <div>
-          <p>I am Industrial Automation Technician, graduated at&nbsp;
+          <p>{about('t_7')}&nbsp;
             <a href="https://ifrs.edu.br/riogrande/" target="_blank" rel="noreferrer">
-              IFRS - Campus Rio Grande
+              {about('link_1')}
             </a>
-            . During my highshool, I&apos;ve enrolled in a robotics project called ASiMov (Automation, Systems and Movement),
-            which provided my experience in the development of autunomous robots. The goal was to compete at the&nbsp;
+            {about('t_8')}&nbsp;
             <a href="https://www.obr.org.br/" target="_blank" rel="noreferrer">
-              Brasilian Robotics Olympics
+              {about('link_2')}
             </a>
             .
           </p>

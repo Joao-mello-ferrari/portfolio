@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+
+.webNav{
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  margin-left: 30%;
+
+  a{
+    color: $text;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    
+    transition: color 0.2s;
+
+    &:hover{
+      color: $theme;
+    }
+  }
+
+  a + a{
+    margin-left: 2rem;
+  }
+
+}
+
+.webActiveLink::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 0.25rem;
+  width: 100%;
+  border-radius: 0.3rem 0.3rem 0 0;
+  background: $theme;
+}
+
+@media(max-width: 768px){
+  .webNav{
+    display: none;
+    visibility: hidden;
+  }
+}

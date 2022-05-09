@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+.links{
+  display: flex;
+  align-items: center;
+
+  & + div{
+    margin-top: 0.25rem;
+  }
+
+  svg{
+    margin-right: 0.4rem;
+    color: $theme;
+  }
+
+  span + span{
+    margin-left: 0.4rem;
+  }
+}
+
+@media(max-width: 768px){
+  .links{
+    a, span{
+      font-size: 1.1rem;
+    }
+  }
+}

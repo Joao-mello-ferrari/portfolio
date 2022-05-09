@@ -35,3 +35,16 @@ a {
   border-radius: 0.2rem;
 }
 
+.chakra-modal__content-container{
+  position: absolute !important;
+  top: 12.5vh !important;
+}
+
+.chakra-modal__content{
+  top: 12.5vh !important;
+}
+  
+.chakra-modal__overlay{
+  top: 12.5vh !important;
+}
+

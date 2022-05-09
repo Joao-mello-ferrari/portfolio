@@ -1,0 +1,111 @@
+@import '../../styles/variables';
+
+.timeline{
+  width: 65%;
+  position: relative;
+  padding: 1rem 0 1rem 2rem;
+
+  div + div{ margin-top: 2.4rem; }
+}
+
+.line{
+  position: absolute;
+  left: -1rem;
+  height: 100%;
+  width: 0.4rem;
+  border-radius: 0.15rem;
+  background: $text;
+}
+
+.iconsContainer{
+  position: relative;
+
+  width: 35%;
+  height: 55vh;
+  padding-top: 3rem;
+
+  margin-left: 2rem;
+  position: sticky;
+  top: 22vh;
+
+  svg{
+    position: absolute;
+    color: $text;
+    font-size: 10rem;
+  }
+
+  .book{
+    top: 45%;
+    left: 30%;
+  }
+
+  .cap{
+    width: 4rem;
+    height: 4rem;
+    background: $bg;
+    position: absolute;
+    top: 50%;
+    left: 47.5%
+  }
+
+  .clock{
+    top: 20%;
+    left: 50%
+  }
+  
+}
+
+.obr{
+  display: flex;
+
+  p{
+    width: 80%;
+  }
+
+  div{
+    width: 30%;
+    margin-left: 1rem;
+  }
+
+  img{
+    border-radius: 1rem;
+  }
+}
+
+@media(max-width: 768px){
+  .timeline{
+    width: 100%;
+    padding: 2rem 0 3rem 2rem;
+  }
+
+  .line{
+    left: 0;
+    height: 99%;
+  }
+
+  .iconsContainer{
+    display: none;
+    visibility: hidden;
+  }
+
+  .obr{
+    flex-direction: column;
+  
+    p{
+      width: 100%;
+    }
+  
+    div{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  
+    img{
+      border-radius: 1rem;
+    }
+  }
+}
+

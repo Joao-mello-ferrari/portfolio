@@ -1,0 +1,70 @@
+{
+  "obr":{
+    "date": "Agosto 2019",
+    "content": "Eu participei na OBR (Olimpíada Brasileira de Robótica). O objetivo era desenvolver robôs autônomos e completar os desafios propostos."
+  },
+  "internship":{
+    "date": "Setembro - Novembro 2019",
+    "content_1": "Eu realizei um estágio na",
+    "content_2": ". Durante esses 3 meses, eu pude aprender muito sobre instrumentação,  através do reparo de dispositivos como manômetros e programação no software Delta-V.",
+    "link_1": "Refinaria de Petróleo Riograndense"
+  },
+  "obr_2":{
+    "date": "Setembro 2019",
+    "content": "Eu participei da OBR por uma segunda vez, mas dessa vez em uma prova teórica. O desafio era responder perguntas sobre robótica no geral. Felizmente, me sai muito bem e ganhei medalha de ouro nas duas participações."
+  },
+  "igti":{
+    "date": "Agosto 2020",
+    "content": "Eu finalizei meu primeiro curso de desenvolvimento full strack no instituto IGTI. Aqui foi quando me interessei na web. Pude aprender sobre os fundamentos das aplicações, mas já conseguia criar algumas aplicações."
+  },
+  "asimov":{
+    "date": "Agosto 2020 - Março 2021",
+    "content_1": "Participei no projeto ASiMov, o qual me proporcionou experiências sobre robótica. O nosso objetivo no projeto era construir robôs autônomos do zero, com software de projeção 3D (como o ",
+    "content_2": ") e placas Arduino/ESP 32 boards com linguagem C++.",
+    "link_1": "onShape"
+  },
+  "gostack":{
+    "date": "Novembro 2020",
+    "content_1": "Agora as coisas começam a ficar mais intensas, no que tange a desenvolvimento web. Como presente dos meus 19 anos, eu pedi de presente um curso mais completo de web.",
+    "content_2": "A instituição foi",
+    "content_3": ", e desde então e não perdi alguma oportunidade de aprender com eles. Dessa vez, não aprendi somente aplicações simples, mas também sistema complexos, e como colocá-los em produção.",
+    "link_1": "Rocketseat"
+  },
+  "tcc":{
+    "date": "Novembro 2021",
+    "content_1": "Como eu tenho formação técnica, foi necessário desenvolver um trabalho de conclusão.",
+    "content_2": "Para esse projeto, eu me reuni com dois amigos,",
+    "content_3": "e",
+    "content_4": ". O nosso projeto consiste em um LiDAR, que mapeia ambientes pequenos em 2D.",
+    "content_5": "Para visualizar o mapeamento, uma interface gráfica foi criada. Em suma, o software foi desenvolvido com React, e recebe os pontos captados pelo LiDAR e plota um gráfico polar.",
+    "link_1": "Felipe Machado",
+    "link_2": "Rafael Machado",
+    "article": "Veja nosso artigo!"
+  },
+  "bytejr":{
+    "date": "Agosto 2021",
+    "content_1": "Eu ingressei na empresa",
+    "content_2": ", como desenvolvedor full stack. Durante o tempo que estive lá, trabalhei com React (front-end) and nodeJS + postgres (back-end).",
+    "content_3": "Lá, eu desenvolvi e fiz deploy de sistemas para o",
+    "content_4": "e a",
+    "link_1": "ByteJr",
+    "link_2": "Tecon - Wilson Sons",
+    "link_3": "Acqua Logic"
+  },
+  "dowhile":{
+    "date": "Dezembro 2021",
+    "content_1": "Participei de um evento tech, organizdo pela",
+    "content_2": ". Durante os dias 1 e 2, assisti palestras sobre programação, pude conhecer novas linguagens, metodologias e interagir com pessoas que nunca havia falado.",
+    "content_3": "O ponto mais forte desse evento provavelmente foi compreender o quão grande, diverso e unido o nosso ecossitema é.",
+    "link_1": "Rocketseat"
+  },
+  "itec":{
+    "date": "Abril 2022",
+    "content_1": "Tive a oportunidade de participar em uma bolsa na universidade. O projeto foi organizado pelo",
+    "content_2": ", um centro de ciências computacionais. Lá, pude trabalhar ao lado da empresa",
+    "content_3": ", em atividades como a melhora do site web deles e a contrudção de um app para celular que monitora dados agrícolas.",
+    "link_1": "iTec - Furg",
+    "link_2": "Auros Robotics"
+  },
+  "certificate": "Certificado aqui"
+}

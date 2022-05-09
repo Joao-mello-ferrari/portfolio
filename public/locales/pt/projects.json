@@ -1,0 +1,41 @@
+{
+  "eforecast":{
+    "name": "e.forecast",
+    "date": "Maio 2022",
+    "content_1": "Um dia eu estava buscando um site para ver a previsão do tempo. Notei a falta de aplicações bonitas e simples, o que me motivou a construir um site com gráficos legais e da maneira que eu gostaria, utilizando a api do",
+    "content_2": "como fornecedor dos dados.",
+    "link_1": "Open Weather Map"
+  },
+  "elearning":{
+    "name": "e.learning",
+    "date": "Março 2022",
+    "content": "Visando aprimorar meus conhecimentos com o next.js, eu decidi criar uma plataforma de vídeos educativos. Educação é um assunto importante, e tudo o que pudermos fazer para levar o conhecimento adiante é válido."
+  },
+  "calendar":{
+    "name": "Calendário",
+    "date": "Fevereiro 2022",
+    "content": "A ideia deste projeto é um simular um calendário, no qual é possível adicionar, listar e remover registros. A interface é o terminal do computador, e toda a mágica acontece nela."
+  },
+  "navy":{
+    "name": "Black Navy War",
+    "date": "Janeiro 2022",
+    "content_1": "Essa é uma versão beta do jogo",
+    "content_2": ". Eu criei um jogo mais complexo, com algumas funcionalidades a mais.",
+    "link_1": "Black Navy War"
+  },
+  "dino":{
+    "name": "Chrome Dino",
+    "date": "Novembro 2021",
+    "content_1": "Essa é uma versão do",
+    "content_2": ". Eu queria exercitar algumas habilidades no desenvolvimento de games, que não são necessariamente associados à web.",
+    "link_1": "Jogo do Dinossauro do Chrome"
+  },
+  "tcc":{
+    "name": "Gráfico do LiDAR",
+    "date": "Setembro 2021",
+    "content": "Interface gráfica desenvolvida para o trabalho de conclusão do curso técnico. O propósito é plotar um gráfico que mostre o mapeamento do ambiente realizado pelo sensor LiDAR."
+  },
+  "git": "Repo Github",
+  "online": "Projeto online",
+  "youtube": "Vídeo no YouTube"
+}

@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+
+.mobileNav{
+  flex-direction: column;
+
+  background: transparent;
+  color: $text;
+  
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: left;
+
+  display: none;
+  visibility: hidden;
+  
+  a{
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+    outline: none;
+
+    & + a{
+      margin-top: 0.6rem;
+    }
+  }
+
+  .mobileActiveLink{
+    background: #414145;
+    color: $theme;
+  }
+}
+
+@media(max-width: 768px){
+  .mobileNav{
+    visibility: visible;
+    display: flex;
+  }
+}

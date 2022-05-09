@@ -1,39 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Why build a portfolio?
+I thought it would be nice to practice some new skills and also show some of my capabilites. Still, to have your own brand is something important, specially nowadays.
 
-## Getting Started
+# External APIs used for this project
+> To get country's flag, the [Country flags api](https://www.countryflagsapi.com/) has been used.
 
-First, run the development server:
+> To get the icons on the projects tab, the [Github](raw.githubusercontent.com) has been used.
 
-```bash
-npm run dev
-# or
-yarn dev
+# Check the project for yourself!
+**Project website** > https://joaomellof.com </br>
+![portfolio home screen. Header on top, with user info and navigation, translate switch on top right. About section with profile photo.](https://user-images.githubusercontent.com/67838782/167499983-6167417e-a28f-49ea-950d-877cd65c1e4e.png "portfolio preview") 
+# How can i download and run the project?
+With simples steps, it will be able to run everything locally.
+<ul>
+  <li>
+    Make sure you have node installed in your computer. <a href="https://nodejs.org/en/">Check their page for more</a>
+  </li>
+  <li>
+    If you want to clone this repository via git, you'll to install it as well. <a href="https://git-scm.com/">Take a look on their home page</a>
+  </li>
+  <li>
+    Then, simply download the code and start the project, like shown below.
+  </li>
+</ul>
+
+
+```git
+   git clone https://github.com/Joao-mello-ferrari/portfolio.git
+   cd portfolio
+   yarn (or npm)
+   yarn dev (or npm dev)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-
-
-https://www.javascripttutorial.net/dom/css/check-if-an-element-is-visible-in-the-viewport/
-https://www.softr.io/tools/svg-wave-generator
+   # Main concepts used within this project
+   * **React**
+   * **Sass** for advanced css features
+   * **Next.js** for performance and SSR/SSG functionalities
+   * **Use of external APIs**, to fetch every data of the application 
+   
+   # Why use nextJS
+<ul>
+  <li>
+    Next is a performatic REACT framework, which helps a lot in the devolopment of futuristics apps.
+  </li>
+  <li>
+    With functionalities such as SSR and SSG, the user´s experience is preserved, as well as a very optimized platform is built.
+  </li>
+  <li>
+    If thats not enough, next has a beutiful integration with external APIs, such as databases, billing and CMS systems.
+  </li>
+</ul>

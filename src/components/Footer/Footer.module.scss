@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+.footerContainer{
+  width: 100vw;
+  max-width: 1440px;
+  height: 8vh;
+  padding: 0.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bgHeader;
+}
+
+.footerText{
+  color: $text;
+  font-size: 0.9rem;
+}

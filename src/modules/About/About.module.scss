@@ -1,0 +1,99 @@
+@import '../../styles/variables';
+
+.description{
+  width: 60%;
+  
+  div{
+    line-height: 1.8rem;
+  }
+
+  div + div{
+    margin-top: 2rem;
+  }
+
+  p + p{ margin-top: 0.2rem; }
+}
+
+.webAvatarContainer{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  height: 55vh;
+  padding-top: 3rem;
+  
+  margin-left: 2rem;
+  position: relative;
+
+  border-radius: 10rem;
+  overflow: hidden;
+  position: sticky;
+  top: 22vh;
+
+  .avatar{
+    border-radius: 50%;
+  }
+
+  .wave{
+    position: absolute;
+    transform: scale(2.4);
+    top: 35%;
+    left: 25%;
+  }
+}
+
+.mobileAvatarContainer{
+  width: calc(100vw - 4rem);
+  padding: 1.6rem;
+  
+  position: relative;
+
+  display: none;
+  visibility: hidden;
+
+  .avatar{
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .waveContainer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+    left: 5%;
+
+    width: calc(100vw - 6rem);
+    height: 14rem;
+    
+    overflow: hidden;
+    border-radius: 50%;
+    
+    .wave{
+      transform: scale(2);
+      align-self: flex-end;
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .description{
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .webAvatarContainer{
+    display: none;
+    visibility: hidden;
+  }
+
+  .mobileAvatarContainer{
+    display: initial;
+    visibility: visible;
+  }
+}
+

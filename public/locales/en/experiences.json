@@ -45,7 +45,11 @@
     "date": "August 2021",
     "content_1": "I started a new position on",
     "content_2": ", as a full stack developer. During the time I`ve spent there, I`ve worked with React (front-end) and nodeJS + postgres (back-end).",
-    "link_1": "ByteJr"
+    "content_3": "There, I developed and deployed applications for",
+    "content_4": "and",
+    "link_1": "ByteJr",
+    "link_2": "Tecon - Wilson Sons",
+    "link_3": "Acqua Logic"
   },
   "dowhile":{
     "date": "December 2021",

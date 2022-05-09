@@ -7,10 +7,7 @@
   color: $text;
   font-size: 1.2rem;
 
-  a{
-    color: $theme;
-    &:hover{ text-decoration: underline; }
-  }
+  
 
   ul{
     list-style: none; /* Remove default bullets */

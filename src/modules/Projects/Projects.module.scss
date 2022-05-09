@@ -23,32 +23,6 @@
     height: fit-content;
     align-self: flex-end;
   }
-
-  .links{
-    display: flex;
-    align-items: center;
-  
-    & + div{
-      margin-top: 0.25rem;
-    }
-  
-    svg{
-      margin-right: 0.4rem;
-      color: $theme;
-    }
-  
-    a{
-      color: $text;
-      &:hover{
-        color: $theme;
-        text-decoration: none;
-      }
-    }
-
-    span + span{
-      margin-left: 0.4rem;
-    }
-  }
 }
 
 @media(max-width: 768px){
@@ -65,12 +39,6 @@
       border-radius: 0.4rem;
       height: fit-content;
       align-self: flex-end;
-    }
-  
-    .links{
-      a, span{
-        font-size: 1.1rem;
-      }
     }
   }
 }

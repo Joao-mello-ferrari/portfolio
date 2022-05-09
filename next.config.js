@@ -8,9 +8,10 @@ const nextConfig = {
       'avatars.githubusercontent.com', 
       'raw.githubusercontent.com',
       'countryflagsapi.com'
-    ]
+    ],
+    dangerouslyAllowSVG: true
   },
-  i18n
+  i18n,
 }
 
 module.exports = nextConfig

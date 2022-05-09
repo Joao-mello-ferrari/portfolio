@@ -3,6 +3,7 @@
 .container {
   width: 100vw;
   max-width: 1440px;
+  min-height: 100vh;
 
   background: $bg;
   margin: 0 auto;

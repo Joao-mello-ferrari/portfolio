@@ -26,7 +26,7 @@ export default function About({ host, locale }: ExperiencesProps){
   return (
     <div className={styles.container}>
       <Header locale={locale}/>
-      <SidebarDrawer/>
+      <SidebarDrawer locale={locale}/>
       <ExperiencesModule host={host}/>
       <Footer/>
     </div>

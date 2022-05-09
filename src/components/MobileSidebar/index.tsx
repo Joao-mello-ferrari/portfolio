@@ -13,7 +13,9 @@ import {
 import { MobileNav } from '../MobileNav';
 import { LanguageSwitch } from '../LanguageSwitch';
 
-export function SidebarDrawer() {
+type SidebarDrawerProps={ locale: string; }
+
+export function SidebarDrawer({ locale }: SidebarDrawerProps) {
   const { isOpen, onClose } = useSidebarDrawer();
 
   return (
@@ -31,7 +33,7 @@ export function SidebarDrawer() {
             alignItems="center"
             background="#262628"
           >
-            <LanguageSwitch/>
+            <LanguageSwitch locale={locale}/>
           </DrawerHeader>
           <DrawerBody
             display="flex"

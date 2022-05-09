@@ -2,6 +2,7 @@ import { useTranslation } from "next-i18next";
 
 import Image from "next/image";
 import { Card } from "./Card";
+import { Link } from '../../components/Links'
 
 import { FiBook, FiClock } from "react-icons/fi";
 
@@ -37,106 +38,140 @@ export function Experiences({ host }:ExperiencesProps){
 
           <Card date={exp('internship.date')} name="Estagio">
             <p>{exp('internship.content_1')}
-              <a href="https://www.refinariariograndense.com.br/site/" target="_blank" rel="noreferrer">
-              &nbsp;{exp('internship.link_1')}
-              </a>
-              {exp('internship.content_2')}
+            <Link
+              to="https://www.refinariariograndense.com.br/site/"
+              content={exp('internship.link_1')}
+            />
+            {exp('internship.content_2')}
             </p>
           </Card>
 
           <Card date={exp('obr_2.date')} name="OBR teorica">
-            <p>{exp('obr_2.content')}
-            </p>
-            <a href={`http://${host}/certificates/obr`} target="_blank" rel="noreferrer">
-            {exp('certificate')}
-            </a>
+            <p>{exp('obr_2.content')}</p>
+            <Link
+              to={`http://${host}/certificates/obr`}
+              content={exp('certificate')}
+              space={false}
+            />
           </Card>
 
           <Card date={exp('igti.date')} name="IGTI">
-            <p>{exp('igti.content')}
-            </p>
-            <a href={`http://${host}/certificates/igti`} target="_blank" rel="noreferrer">
-            {exp('certificate')}
-            </a>
+            <p>{exp('igti.content')}</p>
+            <Link
+              to={`http://${host}/certificates/igti`}
+              content={exp('certificate')}
+              space={false}
+            />
           </Card>
 
           <Card date={exp('asimov.date')} name="ASIMOV">
-            <p>{exp('asimov.content_1')}&nbsp;
-              <a href="https://www.onshape.com" target="_blank" rel="noreferrer">
-              {exp('asimov.link_1')}
-              </a> 
+            <p>
+              {exp('asimov.content_1')}
+              <Link
+                to="https://www.onshape.com"
+                content={exp('asimov.link_1')}
+              />
               {exp('asimov.content_2')}
             </p>
-            <a href={`http://${host}/certificates/asimov`} target="_blank" rel="noreferrer">
-            {exp('certificate')}
-            </a>
+            <Link
+              to={`http://${host}/certificates/asimov`}
+              content={exp('certificate')}
+              space={false}
+            />
           </Card>
 
           <Card date={exp('gostack.date')} name="gostack">
-            <p>{exp('gostack.content_1')}
-            </p>
-            <p>{exp('gostack.content_2')}&nbsp;  
-              <a href="https://rocketseat.com.br/" target="_blank" rel="noreferrer">
-              {exp('gostack.link_1')}
-              </a>
+            <p>{exp('gostack.content_1')}</p>
+            <p>
+              {exp('gostack.content_2')}
+              <Link
+                to="https://rocketseat.com.br/"
+                content={exp('gostack.link_1')}
+              />  
               {exp('gostack.content_3')}
             </p>
-            <a href={`http://${host}/certificates/gostack`} target="_blank" rel="noreferrer">
-            {exp('certificate')}
-            </a>
+            <Link
+              to={`http://${host}/certificates/gostack`}
+              content={exp('certificate')}
+              space={false}
+            />
           </Card>
 
           <Card date={exp('tcc.date')} name="tcc">
             <p>{exp('tcc.content_1')}</p> 
-            <p>{exp('tcc.content_2')}&nbsp;
-              <a href="https://www.instagram.com/hipnoterapeuta_felipe/" target="_blank" rel="noreferrer">
-              {exp('tcc.link_1')}
-              </a>   
-              &nbsp;{exp('tcc.content_3')}&nbsp; 
-              <a href="https://www.instagram.com/rhuszcza/" target="_blank" rel="noreferrer">
-              {exp('tcc.link_2')}
-              </a>
+            <p>
+              {exp('tcc.content_2')}
+              <Link
+                to="https://www.instagram.com/hipnoterapeuta_felipe/"
+                content={exp('tcc.link_1')}
+              />
+              &nbsp;{exp('tcc.content_3')}
+              <Link
+                to="https://github.com/RafaelHuszcza"
+                content={exp('tcc.link_2')}
+              />
               {exp('tcc.content_4')}
             </p>
-            <p>{exp('tcc.content_5')}
-            </p>
-            <a href={`http://${host}/certificates/tcc`} target="_blank" rel="noreferrer">
-            {exp('tcc.article')}
-            </a>
+            <p>{exp('tcc.content_5')}</p>
+            <Link
+              to={`http://${host}/certificates/tcc`}
+              content={exp('tcc.article')}
+              space={false}
+            />
           </Card>
 
           <Card date={exp('bytejr.date')} name="bytejr">
-            <p>{exp('bytejr.content_1')}&nbsp;
-              <a href="https://www.bytejr.com.br/" target="_blank" rel="noreferrer">
-              {exp('bytejr.link_1')}
-              </a> 
+            <p>
+              {exp('bytejr.content_1')}
+              <Link
+                to="https://www.bytejr.com.br/"
+                content={exp('bytejr.link_1')}
+              />
               {exp('bytejr.content_2')}
+              &nbsp;
+              {exp('bytejr.content_3')}
+              <Link
+                to="https://www.wilsonsons.com.br/en/rio-grande-container-terminal/"
+                content={exp('bytejr.link_2')}
+              />
+              &nbsp;{exp('bytejr.content_4')}
+              <Link
+                to="https://www.acqualogic.com.br/"
+                content={exp('bytejr.link_3')}
+              />
+              .
             </p>
           </Card>
 
           <Card date={exp('dowhile.date')} name="dowhile">
-            <p>{exp('dowhile.content_1')}&nbsp;
-              <a href="https://rocketseat.com.br/" target="_blank" rel="noreferrer">
-              {exp('dowhile.link_1')}
-              </a> 
+            <p>
+              {exp('dowhile.content_1')}
+              <Link
+                to="https://rocketseat.com.br/"
+                content={exp('dowhile.link_1')}
+              />
               {exp('dowhile.content_2')}
             </p>
-            <p>{exp('dowhile.content_3')}
-            </p>
-            <a href={`http://${host}/certificates/dowhile`} target="_blank" rel="noreferrer">
-            {exp('certificate')}
-            </a>
+            <p>{exp('dowhile.content_3')}</p>
+            <Link
+              to={`http://${host}/certificates/dowhile`}
+              content={exp('certificate')}
+              space={false}
+            />
           </Card>
           
           <Card date={exp('itec.date')} name="itec">
-            <p>{exp('itec.content_1')}&nbsp;
-              <a href="http://itecfurg.org/" target="_blank" rel="noreferrer">
-              {exp('itec.link_1')}
-              </a> 
-              {exp('itec.content_2')}&nbsp; 
-              <a href="http://www.aurosrobotics.com/" target="_blank" rel="noreferrer">
-              {exp('itec.link_2')}
-              </a>
+            <p>
+              {exp('itec.content_1')}
+              <Link
+                to="http://itecfurg.org/"
+                content={exp('itec.link_1')}
+              />
+              {exp('itec.content_2')}
+              <Link
+                to="http://www.aurosrobotics.com/"
+                content={exp('itec.link_2')}
+              />
               {exp('itec.content_3')}
             </p>
           </Card>

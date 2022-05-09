@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { useTranslation } from 'next-i18next';
+import { Link } from '../../components/Links'
 
 import styles from './About.module.scss'
 import cStyles from '../Common.module.scss'
@@ -58,15 +59,18 @@ export function About(){
         </div>
         
         <div>
-          <p>{about('t_7')}&nbsp;
-            <a href="https://ifrs.edu.br/riogrande/" target="_blank" rel="noreferrer">
-              {about('link_1')}
-            </a>
-            {about('t_8')}&nbsp;
-            <a href="https://www.obr.org.br/" target="_blank" rel="noreferrer">
-              {about('link_2')}
-            </a>
-            .
+          <p>
+          {about('t_7')}
+          <Link 
+            to="https://ifrs.edu.br/riogrande/"
+            content={about('link_1')}
+          />
+          {about('t_8')}
+          <Link 
+            to="https://www.obr.org.br/"
+            content={about('link_2')}
+          />
+          .
           </p>
         </div>
       </section>

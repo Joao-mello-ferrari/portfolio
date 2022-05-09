@@ -23,7 +23,7 @@ export default function About({ locale }: AboutProps){
   return (
     <div className={styles.container}>
       <Header locale={locale}/>
-      <SidebarDrawer/>
+      <SidebarDrawer locale={locale}/>
       <AboutModule />
       <Footer/>
     </div>

@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+
+.white{
+  color: $text;
+  width: fit-content;
+  transition: all 0.2s;
+  font-weight: 600;
+
+  &:hover{
+    color: $theme;
+    text-decoration: none;
+  }
+}
+
+.orange{
+  color: $theme;
+  width: fit-content;
+  transition: all 0.2s;
+  
+  &:hover{ text-decoration: underline; }
+}

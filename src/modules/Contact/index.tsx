@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 
+import { Link } from '../../components/Links'
 import { FiLinkedin, FiYoutube, FiGithub, 
   FiInstagram, FiTwitter, FiMail, FiBook, FiPhoneCall } from 'react-icons/fi'
 
@@ -15,48 +16,60 @@ export function Contact(){
        <div>
         <div className={styles.singleContactContainer}>
           <FiLinkedin/>
-          <a href="https://www.linkedin.com/in/joao-mello-ferrari/" target="_blank" rel="noreferrer">
-            Linkedin
-          </a>
+          <Link
+            to="https://www.linkedin.com/in/joao-mello-ferrari/"
+            content="Linkedin"
+            white
+          />
         </div>
 
         <div className={styles.singleContactContainer}>
           <FiYoutube/>
-          <a href="https://www.youtube.com/channel/UCN_9nlxnbWdOcsR-CJiS7Lw" target="_blank" rel="noreferrer">
-            YouTube 
-          </a>
+          <Link
+            to="https://www.youtube.com/channel/UCN_9nlxnbWdOcsR-CJiS7Lw"
+            content="YouTube"
+            white
+          />
         </div>
 
         <div className={styles.singleContactContainer}>
           <FiGithub/>
-          <a href="https://github.com/Joao-mello-ferrari" target="_blank" rel="noreferrer">
-            Github
-          </a>
+          <Link
+            to="https://github.com/Joao-mello-ferrari"
+            content="Github"
+            white
+          />
         </div>
 
         <div className={styles.singleContactContainer}>
           <FiInstagram/>
-          <a href="https://www.instagram.com/joaomelloferrari/" target="_blank" rel="noreferrer">
-            Instagram
-          </a>
+          <Link
+            to="https://www.instagram.com/joaomelloferrari/"
+            content="Instagram"
+            white
+          />
         </div>
 
         <div className={styles.singleContactContainer}>
           <FiTwitter/>
-          <a href="https://twitter.com/joao_mellof" target="_blank" rel="noreferrer">
-            Twitter
-          </a>
+          <Link
+            to="https://twitter.com/joao_mellof"
+            content="Twitter"
+            white
+          />
         </div>
 
         <div className={styles.singleContactContainer}>
           <FiMail/>
-          <a href="mailto: joao.vico.mellof@gmail.com" target="_blank" rel="noreferrer">
-              {contact('email')}
-          </a>
+          <Link
+            to="mailto: joao.vico.mellof@gmail.com"
+            content={contact('email')}
+            white
+          />
         </div>
        </div>
-        
       </section>
+
       <section className={styles.iconsContainer}>
         <FiPhoneCall className={styles.phone}/>
         <div className={styles.cap}/>

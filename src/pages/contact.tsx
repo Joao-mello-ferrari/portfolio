@@ -22,7 +22,7 @@ export default function Contact({ locale }: ContactProps){
   return(
     <div className={styles.container}>
       <Header locale={locale}/>
-      <SidebarDrawer/>
+      <SidebarDrawer locale={locale}/>
       <ContactModule />
     </div>
   )

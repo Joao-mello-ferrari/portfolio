@@ -23,7 +23,7 @@ export default function Projects({ locale }: ProjectsProps){
   return(
     <div className={styles.container}>
       <Header locale={locale}/>
-      <SidebarDrawer/>
+      <SidebarDrawer locale={locale}/>
       <ProjectsModule />
       <Footer/>
     </div>

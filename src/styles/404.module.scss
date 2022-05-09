@@ -1,0 +1,37 @@
+@import './variables';
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  background: $bgHeader;
+  padding: 2.4rem;
+  border-radius: 2rem;
+  color: $text;
+}
+
+.mainText{
+  font-size: 2.4rem;
+}
+
+.text{
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
+
+  svg{
+    margin-left: 1.2rem;
+    font-size: 2.4rem;
+    transition: color 0.2s;
+    &:hover{
+      color: $theme;
+      cursor: pointer;
+    }
+  }
+}

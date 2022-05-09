@@ -7,7 +7,7 @@ I thought it would be nice to practice some new skills and also show some of my 
 > To get the icons on the projects tab, the [Github](raw.githubusercontent.com) has been used.
 
 # Check the project for yourself!
-**Project website** > https://joaomellof.com
+**Project website** > https://joaomellof.com </br>
 ![portfolio home screen. Header on top, with user info and navigation, translate switch on top right. About section with profile photo.](https://user-images.githubusercontent.com/67838782/167499983-6167417e-a28f-49ea-950d-877cd65c1e4e.png "portfolio preview") 
 # How can i download and run the project?
 With simples steps, it will be able to run everything locally.

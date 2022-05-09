@@ -34,6 +34,7 @@ With simples steps, it will be able to run everything locally.
    # Main concepts used within this project
    * **React**
    * **Sass** for advanced css features
+   * **i18next** for translation
    * **Next.js** for performance and SSR/SSG functionalities
    * **Use of external APIs**, to fetch every data of the application 
    

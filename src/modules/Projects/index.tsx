@@ -2,19 +2,40 @@ import { useTranslation } from 'next-i18next';
 
 import { Link } from '../../components/Links';
 import { Card } from './Card'
-import { FiGithub, FiGlobe, FiYoutube } from "react-icons/fi";
 
-import { Next, Typescript, Python, C } from '../../components/Techs'
+import { Next, Typescript, Python, C, ReactIcon } from '../../components/Techs'
 import { Git, Online, Youtube } from '../../components/ProjectsWebsites'
 
 import styles from './Projects.module.scss'
-import Image from 'next/image';
 
 export function Projects(){
   const { t: projects } = useTranslation('projects');
 
   return(
     <div className={styles.container}>
+      <Card title={projects('stocks.name')} date={projects('stocks.date')} name="stocks">
+        <p>
+          {projects('stocks.content_1')}
+          <Link
+            to="https://developers.google.com/identity/sign-in/web"
+            content={projects('stocks.link_1')}
+          />
+          &nbsp;
+          {projects('stocks.content_2')}
+        </p>
+
+        <div className={styles.bottomInfoContainer}>
+          <div>
+            <Git url="https://github.com/Joao-mello-ferrari/stocks"/>
+            <Online url="https://stocks.joaomellof.com"/>
+          </div>
+          <div className={styles.techs}>
+            <ReactIcon/>
+            <Typescript/>
+          </div>
+        </div>
+      </Card>
+
       <Card title={projects('eforecast.name')} date={projects('eforecast.date')} name="eforecast">
         <p>
           {projects('eforecast.content_1')}

@@ -48,3 +48,9 @@ a {
   top: 12.5vh !important;
 }
 
+@media(min-width: 1580px){
+  html{
+    font-size: 106.25%;
+  }
+}
+

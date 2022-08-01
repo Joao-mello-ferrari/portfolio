@@ -2,8 +2,9 @@
 
 .footerContainer{
   width: 100vw;
-  max-width: 1440px;
+  max-width: 1880px;
   height: 8vh;
+  max-height: 80px;
   padding: 0.6rem;
 
   display: flex;
@@ -15,4 +16,10 @@
 .footerText{
   color: $text;
   font-size: 0.9rem;
+}
+
+@media(min-width: 1580px){
+  .footerContainer{
+    margin-top: auto;
+  }
 }

@@ -2,10 +2,17 @@
 
 .container {
   width: 100vw;
-  max-width: 1440px;
+  max-width: 1880px;
   min-height: 100vh;
 
   background: $bg;
   margin: 0 auto;
+}
+
+@media(min-width: 1580px){
+  .container{
+   display: flex;
+   flex-direction: column;
+  }
 }
 

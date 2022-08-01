@@ -1,4 +1,11 @@
 {
+  "stocks":{
+    "name": "stocks",
+    "date": "Agosto 2022",
+    "content_1": "Eu começei a investir em 2022, e queria uma plataforma onde eu pudesse controlar os meus ativos. A partir desse desejo, resolvi, então, desenvolver esse projeto. Com o uso da",
+    "content_2": "qualquer pessoa poderia logar com segurança, e controlar as suas finanças.",
+    "link_1": "API de login social da Google,"
+  },
   "eforecast":{
     "name": "e.forecast",
     "date": "Maio 2022",

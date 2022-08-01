@@ -1,4 +1,11 @@
 {
+  "stocks":{
+    "name": "stocks",
+    "date": "August 2022",
+    "content_1": "I first started investing in 2022, and wanted a platform in which I could take a look on how many stocks I was in hand. From that wish, I came across the ideia of a stocks application, which everybody could use. By usiging",
+    "content_2": "anyone can securely register, and manage their own finances.",
+    "link_1": "Google social login API,"
+  },
   "eforecast":{
     "name": "e.forecast",
     "date": "May 2022",

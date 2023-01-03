@@ -1,15 +1,24 @@
 import { useEffect } from 'react';
 import { GetServerSideProps, GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import dynamic from 'next/dynamic';
 
 import { useLocale } from '../contexts/locale';
 
-import { Header } from '../components/Header'
-import { SidebarDrawer } from '../components/MobileSidebar'
 import { Experiences as ExperiencesModule } from '../modules/Experiences'
 import { Footer } from '../components/Footer'
 
 import styles from '../styles/Home.module.scss'
+
+const Header = dynamic(() => 
+  import('../components/Header').then((mod) => mod.Header), 
+  { ssr: false }
+);
+
+const SidebarDrawer = dynamic(() => 
+  import('../components/MobileSidebar').then((mod) => mod.SidebarDrawer), 
+  { ssr: false }
+);
 
 type ExperiencesProps={
   host: string;

@@ -1,3 +1,29 @@
+:root{  
+  --bg: #181820;
+  --bgHeader: #262628;
+  --theme: #FF9517;
+  --text: #FFFFFF;
+  --logo: #F9F9F9;
+  --card-box-shadow: rgba(255, 255, 255, 0.6);
+  --exp-card-after-box-shadow: rgba(255, 255, 255, 0.3);
+  --theme-icon: #F9F9F9;
+  --mobile-sidebar-bg: #262628;
+  --mobile-active-link: #414145;
+}
+
+[theme="light"]{
+  --bg: #ededed;
+  --bgHeader: #e0e0e0;
+  --theme: #FF9517;
+  --text: #181820;
+  --logo: #8b8b91;
+  --card-box-shadow: rgba(24, 24, 32, 0.6);
+  --exp-card-after-box-shadow: rgba(24, 24, 32, 0.25);
+  --theme-icon: #ffbd17;
+  --mobile-active-link: #ededed;
+  --mobile-sidebar-bg: #e0e0e0;
+}
+
 html,
 body {
   padding: 0;

@@ -1,5 +1,3 @@
-@import '../../styles/variables';
-
 .description{
   width: 60%;
   
@@ -33,13 +31,6 @@
   .avatar{
     border-radius: 50%;
   }
-
-  .wave{
-    position: absolute;
-    transform: scale(2.4);
-    top: 35%;
-    left: 25%;
-  }
 }
 
 .mobileAvatarContainer{
@@ -57,26 +48,6 @@
     height: 12rem;
     overflow: hidden;
     margin: 0 auto;
-  }
-
-  .waveContainer{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 20%;
-    left: 5%;
-
-    width: calc(100vw - 6rem);
-    height: 14rem;
-    
-    overflow: hidden;
-    border-radius: 50%;
-    
-    .wave{
-      transform: scale(2);
-      align-self: flex-end;
-    }
   }
 }
 

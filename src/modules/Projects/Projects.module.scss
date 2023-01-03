@@ -1,12 +1,10 @@
-@import '../../styles/variables';
-
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.4rem;
   padding: 3rem 4rem;
 
-  color: $text;
+  color: var(--text);
   font-size: 1.2rem;
 }
 
@@ -16,7 +14,7 @@
   margin-top: auto;
 
   .techs{
-    background: $bgHeader;
+    background: var(--bgHeader);
     padding: 0.4rem 0.6rem;
     margin-top: -0.6rem;
     border-radius: 0.4rem;

@@ -1,13 +1,9 @@
-@import '../styles/variables';
-
 .container{
   display: flex;
   padding: 3rem 4rem;
 
-  color: $text;
+  color: var(--text);
   font-size: 1.2rem;
-
-  
 
   ul{
     list-style: none; /* Remove default bullets */
@@ -22,7 +18,7 @@
       height: 8px;
       width: 8px;
       margin: 0 0.6rem 0.1rem -1.1rem;
-      background: $theme;
+      background: var(--theme);
       border-radius: 50%;
       display: inline-block; /* Needed to add space between the bullet and the text */
     }

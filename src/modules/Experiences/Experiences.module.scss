@@ -1,5 +1,3 @@
-@import '../../styles/variables';
-
 .timeline{
   width: 65%;
   position: relative;
@@ -14,7 +12,7 @@
   height: 100%;
   width: 0.4rem;
   border-radius: 0.15rem;
-  background: $text;
+  background: var(--text);
 }
 
 .iconsContainer{
@@ -30,7 +28,7 @@
 
   svg{
     position: absolute;
-    color: $text;
+    color: var(--text);
     font-size: 10rem;
   }
 
@@ -42,7 +40,7 @@
   .cap{
     width: 4rem;
     height: 4rem;
-    background: $bg;
+    background: var(--bg);
     position: absolute;
     top: 50%;
     left: 47.5%

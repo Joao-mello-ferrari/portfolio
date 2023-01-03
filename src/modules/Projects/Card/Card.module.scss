@@ -1,7 +1,5 @@
-@import '../../../styles/variables';
-
 .cardContainer{
-  box-shadow: 0 0 0.4rem rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0.4rem var(--card-box-shadow);
   border-radius: 1rem;
 
   display: flex;
@@ -24,7 +22,7 @@
   margin-bottom: 1.6rem;
   
   .info{
-    color: $theme;
+    color: var(--theme);
     font-size: 1.8rem;
     font-weight: 500;
   }
@@ -32,21 +30,19 @@
   .dateContainer{
     display: flex;
     align-items: center;
-    background: $bgHeader;
+    background: var(--bgHeader);
     padding: 0.2rem 0.6rem;
     border-radius: 0.4rem;
-  
-    
   
     span{
       font-size: 1.2rem!important;
       font-weight: 400!important;
-      color: $text!important;
+      color: var(--text)!important;
     }
   
     svg{
       margin-right: 0.5rem;
-      color: $text;
+      color: var(--text);
     }
   }
 }
@@ -61,7 +57,7 @@
   }
 
   .mainInfo .dateContainer{
-    background: $bgHeader;
+    background: var(--bgHeader);
     padding: 0.1rem 0.4rem;
     border-radius: 0.4rem;
     margin-top: -0.1rem;

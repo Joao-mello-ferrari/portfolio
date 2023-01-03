@@ -1,5 +1,3 @@
-@import '../../styles/variables';
-
 .container{
   height: 87.5vh;
 }
@@ -17,7 +15,7 @@
     width: 100%;
 
     padding: 2rem;
-    background: $bgHeader;
+    background: var(--bgHeader);
     border-radius: 2rem;
   }
 }
@@ -32,15 +30,15 @@
 
   svg{
     margin-right: 1rem;
-    color: $theme;
+    color: var(--theme);
     font-size: 2rem;
   }
 
   a{
-    color: $text!important;
+    color: var(--text)!important;
     font-size: 1.4rem;
     &:hover{
-      color: $theme!important;
+      color: var(--theme)!important;
       text-decoration: none!important;
     }
   }
@@ -59,7 +57,7 @@
 
   svg{
     position: absolute;
-    color: #FFFFFF;
+    color: var(--text);
     font-size: 10rem;
   }
 
@@ -71,7 +69,7 @@
   .cap{
     width: 4rem;
     height: 4rem;
-    background: $bg;
+    background: var(--bg);
     position: absolute;
     top: 50%;
     left: 47.5%

@@ -1,11 +1,9 @@
-@import '../../styles/variables';
-
 .headerContainer{
   width: 100vw;
   max-width: 1880px;
   height: 12.5vh;
 
-  background: $bgHeader;
+  background: var(--bgHeader);
   
   position: sticky;
   top: 0;
@@ -15,8 +13,6 @@
   padding: 0 4rem;
 
   z-index: 1;
-
-  transition: background 0.6s;
 }
 
 .name{
@@ -26,7 +22,7 @@
   font-family: 'Dancing Script';
   padding: 0 0.6rem;
 
-  background: linear-gradient(45deg, #f9f9f9, $theme);
+  background: linear-gradient(45deg, var(--logo), var(--theme));
   background-clip: text;
   -webkit-background-clip: text;
 
@@ -48,7 +44,7 @@
     height: 0.3rem;
     border-radius: 0.1rem;
     display: block;
-    background: $text;
+    background: var(--text);
     transition-duration: 0.2s;
     transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 
@@ -59,7 +55,7 @@
       height: 0.3rem;
       border-radius: 0.1rem;
       display: block;
-      background: $text;
+      background: var(--text);
     }
 
     &::before{ 
@@ -76,6 +72,7 @@
 
 .hamburgerContainer.isOpened{
   .hamburger{
+    transition-property: transform;
     transform: rotate(45deg);
     transition-delay: 0.12s;
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -95,14 +92,18 @@
 } 
 
 @media(max-width: 768px){
-  
   .headerContainer{
     padding: 0 1.4rem;
 
-    .headerSwitch{
+    .headerSwitch,
+    .headerTheme{
       display: none!important;
-      visibility: hidden;
+      visibility: hidden!important;
     }
+  }
+
+  .theme{
+    display: none;
   }
 
   .name{

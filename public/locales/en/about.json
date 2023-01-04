@@ -4,12 +4,14 @@
   "t_3": "I first started programming for robotics, but in middle 2020 I' came across web development.",
   "t_4": "Since then, I've been studying and developing each time more applications, with diferente features and goals.",
   "t_5": "I started to realize how powerfull programming skills could be, due to the variety of situations I could use it to my favor. During my web lifetime, I've created plenty of websites, some of which are listed below ",
-  "t_6": "I also develop node.js based API's, usually integrating with relational databases and docker. Many os those backends have been deployed using a VPS, and in some cases the frontend as well.",
+  "t_6": "I also develop node.js based API's, usually integrating with relational databases and docker. Some of those Back-ends have been deployed using a Linux VPS, what, from my perspective, is obsolete nowadays. However, my go to stack is Front-end",
   "t_7": "I am Industrial Automation Technician, graduated at",
   "t_8": ". During my highshool, I've enrolled in a robotics project called ASiMov (Automation, Systems and Movement), which provided my experience in the development of autunomous robots. The goal was to compete at the",
+  "t_9": "An interesting fact is that to programm in not necessarly my favorite task. I actually really enjoy to work together, discuss alternatives to solve a problem, speak to the end customer... I think that's whats my job is about. What I enjoy the most is to talk to people, generally.",
   "list_1": "A graph software, which connects to a custom LiDAR and displays mapped data",
   "list_2": "A learning platform",
   "list_3": "A worldwide forecast application, with some nice graphs",
+  "list_4": "A Stocks application, to help us control our finances",
   "link_1":"IFRS - Rio Grande Campus",
   "link_2":"Brasilian Robotics Olympics"
 }

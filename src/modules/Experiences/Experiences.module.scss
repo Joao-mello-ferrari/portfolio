@@ -2,6 +2,7 @@
   width: 65%;
   position: relative;
   padding: 1rem 0 1rem 2rem;
+  margin-left: 1rem;
 
   div + div{ margin-top: 2.4rem; }
 }
@@ -12,7 +13,7 @@
   height: 100%;
   width: 0.4rem;
   border-radius: 0.15rem;
-  background: var(--text);
+  background: var(--lines);
 }
 
 .iconsContainer{
@@ -28,27 +29,27 @@
 
   svg{
     position: absolute;
-    color: var(--text);
+    color: var(--lines);
     font-size: 10rem;
   }
 
   .book{
-    top: 45%;
-    left: 30%;
+    top: calc(50% - 5rem + 30px);
+    left: calc(50% - 5rem - 35px);
   }
 
   .cap{
-    width: 4rem;
-    height: 4rem;
+    width: 4.6rem;
+    height: 6rem;
     background: var(--bg);
     position: absolute;
-    top: 50%;
-    left: 47.5%
+    top: calc(50% - 3rem + 10px);
+    left: calc(50% - 2.3rem - 15px);
   }
 
   .clock{
-    top: 20%;
-    left: 50%
+    top: calc(50% - 5rem - 30px);
+    left: calc(50% - 5rem + 35px);
   }
   
 }
@@ -74,6 +75,7 @@
   .timeline{
     width: 100%;
     padding: 2rem 0 3rem 2rem;
+    margin-left: 0;
   }
 
   .line{
@@ -103,6 +105,31 @@
   
     img{
       border-radius: 1rem;
+    }
+  }
+}
+
+@media(min-width: 1580px){
+  .iconsContainer{
+    svg{
+      font-size: 14rem;
+    }
+  
+    .book{
+      top: calc(50% - 7rem + 80px);
+      left: calc(50% - 7rem - 70px);
+    }
+  
+    .cap{
+      width: 6rem;
+      height: 8rem;
+      top: calc(50% - 3rem + 20px);
+      left: calc(50% - 4rem - 20px);
+    }
+  
+    .clock{
+      top: calc(50% - 7rem - 80px);
+      left: calc(50% - 7rem + 70px);
     }
   }
 }

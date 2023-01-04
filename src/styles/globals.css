@@ -9,6 +9,7 @@
   --theme-icon: #F9F9F9;
   --mobile-sidebar-bg: #262628;
   --mobile-active-link: #414145;
+  --lines: #FFFFFF;
 }
 
 [theme="light"]{
@@ -22,6 +23,7 @@
   --theme-icon: #ffbd17;
   --mobile-active-link: #ededed;
   --mobile-sidebar-bg: #e0e0e0;
+  --lines: #595968;
 }
 
 html,
@@ -74,9 +76,14 @@ a {
   top: 12.5vh !important;
 }
 
-@media(min-width: 1580px){
+@media(min-width: 1480px){
   html{
     font-size: 106.25%;
   }
 }
 
+@media(min-width: 1680px){
+  html{
+    font-size: 125%;
+  }
+}

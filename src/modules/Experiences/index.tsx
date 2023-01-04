@@ -49,7 +49,7 @@ export function Experiences({ host }:ExperiencesProps){
           <Card date={exp('obr_2.date')} name="OBR teorica">
             <p>{exp('obr_2.content')}</p>
             <Link
-              to={`http://${host}/certificates/obr`}
+              to={`https://${host}/certificates/obr`}
               content={exp('certificate')}
               space={false}
             />
@@ -58,7 +58,7 @@ export function Experiences({ host }:ExperiencesProps){
           <Card date={exp('igti.date')} name="IGTI">
             <p>{exp('igti.content')}</p>
             <Link
-              to={`http://${host}/certificates/igti`}
+              to={`https://${host}/certificates/igti`}
               content={exp('certificate')}
               space={false}
             />
@@ -74,7 +74,7 @@ export function Experiences({ host }:ExperiencesProps){
               {exp('asimov.content_2')}
             </p>
             <Link
-              to={`http://${host}/certificates/asimov`}
+              to={`https://${host}/certificates/asimov`}
               content={exp('certificate')}
               space={false}
             />
@@ -91,7 +91,7 @@ export function Experiences({ host }:ExperiencesProps){
               {exp('gostack.content_3')}
             </p>
             <Link
-              to={`http://${host}/certificates/gostack`}
+              to={`https://${host}/certificates/gostack`}
               content={exp('certificate')}
               space={false}
             />
@@ -114,7 +114,7 @@ export function Experiences({ host }:ExperiencesProps){
             </p>
             <p>{exp('tcc.content_5')}</p>
             <Link
-              to={`http://${host}/certificates/tcc`}
+              to={`https://${host}/certificates/tcc`}
               content={exp('tcc.article')}
               space={false}
             />
@@ -154,7 +154,7 @@ export function Experiences({ host }:ExperiencesProps){
             </p>
             <p>{exp('dowhile.content_3')}</p>
             <Link
-              to={`http://${host}/certificates/dowhile`}
+              to={`https://${host}/certificates/dowhile`}
               content={exp('certificate')}
               space={false}
             />
@@ -169,11 +169,47 @@ export function Experiences({ host }:ExperiencesProps){
               />
               {exp('itec.content_2')}
               <Link
-                to="http://www.aurosrobotics.com/"
+                to="https://www.aurosrobotics.com/"
                 content={exp('itec.link_2')}
               />
               {exp('itec.content_3')}
             </p>
+            <p>
+              {exp('itec.content_4')}
+              <Link
+                to={`https://${host}/certificates/itec-paper`}
+                content={exp('itec.link_3')}
+                space={false}
+              />
+            </p>
+          </Card>
+
+          <Card date={exp('dowhile2.date')} name="dowhile2">
+            <p>{exp('dowhile2.content_1')}</p>
+          </Card>
+
+          <Card date={exp('ignite.date')} name="ignite">
+            <p>{exp('ignite.content_1')}</p>
+            <Link
+              to={`https://${host}/certificates/ignite`}
+              content={exp('certificate')}
+            />
+          </Card>
+
+          <Card date={exp('bytejr2.date')} name="bytejr2">
+            <p>
+              {exp('bytejr2.content_1')}
+              {exp('bytejr2.content_2')}
+              <Link
+                to={`https://${host}/certificates/fejers`}
+                content={exp('bytejr2.link_1')}
+                space={false}
+              />
+            </p>
+            <Link
+              to={`https://${host}/certificates/bytejr`}
+              content={exp('bytejr2.link_2')}
+            />
           </Card>
         </div>
       

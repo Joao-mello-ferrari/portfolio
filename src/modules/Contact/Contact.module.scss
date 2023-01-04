@@ -57,27 +57,27 @@
 
   svg{
     position: absolute;
-    color: var(--text);
+    color: var(--lines);
     font-size: 10rem;
   }
 
   .book{
-    top: 45%;
-    left: 30%;
+    top: calc(50% - 5rem + 47px);
+    left: calc(50% - 5rem - 35px);
   }
 
   .cap{
-    width: 4rem;
-    height: 4rem;
+    width: 4.6rem;
+    height: 6rem;
     background: var(--bg);
     position: absolute;
-    top: 50%;
-    left: 47.5%
+    top: calc(50% - 3rem + 25px);
+    left: calc(50% - 2.3rem - 15px);
   }
 
   .phone{
-    top: 20%;
-    left: 50%
+    top: calc(50% - 5rem - 47px);
+    left: calc(50% - 5rem + 35px);
   }
 }
 
@@ -97,5 +97,30 @@
   .iconsContainer{
     display: none;
     visibility: hidden;
+  }
+}
+
+@media(min-width: 1580px){
+  .iconsContainer{
+    svg{
+      font-size: 14rem;
+    }
+  
+    .book{
+      top: calc(50% - 7rem + 70px);
+      left: calc(50% - 7rem - 70px);
+    }
+  
+    .cap{
+      width: 6rem;
+      height: 8rem;
+      top: calc(50% - 3rem + 20px);
+      left: calc(50% - 4rem - 20px);
+    }
+  
+    .phone{
+      top: calc(50% - 7rem - 70px);
+      left: calc(50% - 7rem + 70px);
+    }
   }
 }

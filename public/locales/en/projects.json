@@ -13,6 +13,10 @@
     "content_2": "api as data provider.",
     "link_1": "Open Weather Map"
   },
+  "opensource":{
+    "name": "Open Source Courses",
+    "content_1": "I enrolled, in april 2022, in this amazing project whose purpose is to spread out programming content for free. Our goal is to help whoever is starting out in this ecossystem, not only with regards to Soft but also Hard skills, so these people's skills will be, hopefully, developed in a shorter period of time."
+  },
   "elearning":{
     "name": "e.learning",
     "date": "March 2022",

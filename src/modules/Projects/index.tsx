@@ -7,6 +7,7 @@ import { Next, Typescript, Python, C, ReactIcon } from '../../components/Techs'
 import { Git, Online, Youtube } from '../../components/ProjectsWebsites'
 
 import styles from './Projects.module.scss'
+import Image from 'next/image';
 
 export function Projects(){
   const { t: projects } = useTranslation('projects');
@@ -58,6 +59,29 @@ export function Projects(){
           </div>
         </div>
       </Card>
+
+      <div className={styles.opensource}>
+        <h2>{projects('opensource.name')}</h2>
+        <div>
+          <p>
+            {projects('opensource.content_1')}
+            <br/>
+            <br/>
+            <Link
+              to='https://github.com/opensource-courses/courses'
+              content='Conheça mais sobre o projeto!'
+              space={false}
+            />
+          </p>
+          <Image 
+            src="https://raw.githubusercontent.com/opensource-courses/.github/main/banners/banner-org.png"
+            alt="Open Source courses purple background"
+            width={1000}
+            height={1000}
+            className={styles.coverImage}
+          />
+        </div>
+      </div>
 
       <Card title={projects('elearning.name')} date={projects('elearning.date')} name="elearning">
         <p>{projects('elearning.content')}</p>
@@ -144,6 +168,8 @@ export function Projects(){
           </div>
         </div>
       </Card>
+
+      
     </div>
   )
 }

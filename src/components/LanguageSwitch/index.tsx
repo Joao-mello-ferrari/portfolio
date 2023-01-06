@@ -28,15 +28,13 @@ export function LanguageSwitch({ hoclass='', locale: defLoc }: LanguageSwitchPro
         outline="none"
         _focus={{boxShadow: 'none!important'}}
       />
-      <div className={styles.langContainer}>
-        <div className={styles.lang}>
-          <Image 
-            src={`https://countryflagsapi.com/png/${locale === 'pt' ? 'br' : 'us'}`}
-            alt='flag'
-            layout='fill'
-          />          
-        </div>
-      </div>
+      <Image 
+        src={`https://countryflagsapi.com/png/${locale === 'pt' ? 'br' : 'us'}`}
+        alt='flag'
+        width={24}
+        height={16}
+        className={styles.lang}
+      />          
     </div>
   )
 }

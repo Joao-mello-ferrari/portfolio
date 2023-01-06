@@ -34,8 +34,8 @@
   }
 
   .book{
-    top: calc(50% - 5rem + 30px);
-    left: calc(50% - 5rem - 35px);
+    top: calc(50% - 5rem + 45px);
+    left: calc(50% - 5rem - 40px);
   }
 
   .cap{
@@ -43,13 +43,13 @@
     height: 6rem;
     background: var(--bg);
     position: absolute;
-    top: calc(50% - 3rem + 10px);
-    left: calc(50% - 2.3rem - 15px);
+    top: calc(50% - 3rem + 30px);
+    left: calc(50% - 2.3rem - 25px);
   }
 
   .clock{
-    top: calc(50% - 5rem - 30px);
-    left: calc(50% - 5rem + 35px);
+    top: calc(50% - 5rem - 45px);
+    left: calc(50% - 5rem + 40px);
   }
   
 }
@@ -111,6 +111,8 @@
 
 @media(min-width: 1580px){
   .iconsContainer{
+    margin-left: 6rem;
+
     svg{
       font-size: 14rem;
     }

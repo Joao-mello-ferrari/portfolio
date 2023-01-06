@@ -10,13 +10,15 @@ import { Footer } from '../components/Footer'
 
 import styles from '../styles/Home.module.scss'
 
+import { HeaderProps } from '../interfaces/header'
+import { SidebarDrawerProps } from '../interfaces/sidebarDrawer'
 
-const Header = dynamic(() => 
+const Header = dynamic<HeaderProps>(() => 
   import('../components/Header').then((mod) => mod.Header), 
   { ssr: false }
 );
 
-const SidebarDrawer = dynamic(() => 
+const SidebarDrawer = dynamic<SidebarDrawerProps>(() => 
   import('../components/MobileSidebar').then((mod) => mod.SidebarDrawer), 
   { ssr: false }
 );

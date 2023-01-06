@@ -6,7 +6,7 @@ import { Theme } from '../Theme'
 import styles from './Header.module.scss'
 import { useState } from 'react'
 
-type HeaderProps={ locale: string; }
+export type HeaderProps={ locale: string; }
 
 export function Header({ locale }: HeaderProps){
   const [theme, setTheme] = useState(() => {

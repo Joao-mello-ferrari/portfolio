@@ -1,10 +1,8 @@
-@import '../../styles/variables';
-
 .mobileNav{
   flex-direction: column;
 
   background: transparent;
-  color: $text;
+  color: var(--text);
   
   font-size: 1.6rem;
   font-weight: 600;
@@ -24,8 +22,8 @@
   }
 
   .mobileActiveLink{
-    background: #414145;
-    color: $theme;
+    background: var(--mobile-active-link);
+    color: var(--theme);
   }
 }
 

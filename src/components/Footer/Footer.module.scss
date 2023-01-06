@@ -1,8 +1,6 @@
-@import '../../styles/variables';
-
 .footerContainer{
   width: 100vw;
-  max-width: 1880px;
+  max-width: 2000px;
   height: 8vh;
   max-height: 80px;
   padding: 0.6rem;
@@ -10,12 +8,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $bgHeader;
+  background: var(--bgHeader);
 }
 
 .footerText{
-  color: $text;
-  font-size: 0.9rem;
+  color: var(--text);
+  font-size: 1rem;
+  text-align: center;
 }
 
 @media(min-width: 1580px){

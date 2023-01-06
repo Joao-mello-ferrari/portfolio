@@ -23,7 +23,8 @@ export function MobileLink({name, href }:LinkProps){
     return(
       <NextLink 
         href={href} 
-        passHref 
+        passHref
+        legacyBehavior 
       >
         <a className={styles.mobileActiveLink}>
           {name}
@@ -36,6 +37,7 @@ export function MobileLink({name, href }:LinkProps){
     <NextLink 
       href={href} 
       passHref 
+      legacyBehavior
     >
       <a onClick={onClose}>{name}</a>
     </NextLink> 

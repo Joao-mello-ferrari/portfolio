@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       
       <AllContextsProvider>
-          <Component {...pageProps} />
+        <Component {...pageProps} />
       </AllContextsProvider>
     </>
   )

@@ -1,19 +1,17 @@
-@import '../../styles/variables';
-
 .white{
-  color: $text;
+  color: var(--text);
   width: fit-content;
   transition: all 0.2s;
   font-weight: 600;
 
   &:hover{
-    color: $theme;
+    color: var(--theme);
     text-decoration: none;
   }
 }
 
 .orange{
-  color: $theme;
+  color: var(--theme);
   width: fit-content;
   transition: all 0.2s;
   

@@ -63,8 +63,25 @@
     "content_1": "Tive a oportunidade de participar em uma bolsa na universidade. O projeto foi organizado pelo",
     "content_2": ", um centro de ciências computacionais. Lá, pude trabalhar ao lado da empresa",
     "content_3": ", em atividades como a melhora do site web deles e a contrudção de um app para celular que monitora dados agrícolas.",
+    "content_4": "Uma das atividades das quais eu participei foi no desenvolvimento de uma ferramenta para treinamento de redes neurais. Para acessar o artigo, clique ",
     "link_1": "iTec - Furg",
-    "link_2": "Auros Robotics"
+    "link_2": "Auros Robotics",
+    "link_3": "aqui."
+  },
+  "dowhile2":{
+    "date": "Dezembro 2022",
+    "content_1": "participei, por uma segunda vez, no Do While. Agora, a ideia era compreender como o ecossitema da programação está mudando, não é a toa que o nome do evento foi The Expanding Universe."
+  },
+  "ignite":{
+    "date": "Dezembro 2022",
+    "content_1": "Finalizei mais um curso de programação web, conduzido pela RocketSeat. Porém, desta vez o foco foi front-end, sobretudo o framework Next.js."
+  },
+  "bytejr2":{
+    "date": "Dezembro 2022",
+    "content_1": "Finalizei minha participação na Byte Jr. Como um último momento juntos, fui ao Prêmio Fejers para comemorar as conquisas e resultados atingidos durante o ano.",
+    "content_2": " Para ver o certificado do evento, clique ",
+    "link_1": "aqui.",
+    "link_2": "Certificado de participação na Byte Jr."
   },
   "certificate": "Certificado aqui"
 }

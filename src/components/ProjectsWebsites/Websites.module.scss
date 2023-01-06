@@ -1,5 +1,3 @@
-@import '../../styles/variables';
-
 .links{
   display: flex;
   align-items: center;
@@ -10,7 +8,7 @@
 
   svg{
     margin-right: 0.4rem;
-    color: $theme;
+    color: var(--theme);
   }
 
   span + span{

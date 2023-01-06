@@ -21,6 +21,7 @@ export function WebLink({name, href }:LinkProps){
       <NextLink 
         href={href} 
         passHref 
+        legacyBehavior
       >
         <a className={styles.webActiveLink}>
           {name}
@@ -33,6 +34,7 @@ export function WebLink({name, href }:LinkProps){
     <NextLink 
       href={href} 
       passHref 
+      legacyBehavior
     >
       <a>{name}</a>
     </NextLink> 

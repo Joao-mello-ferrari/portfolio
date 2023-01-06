@@ -63,8 +63,26 @@
     "content_1": "I had the pleasure of being applied to an university scholarship. The project was organized by",
     "content_2": ", a computer science center. There, I have been given the oportunity to work alongside",
     "content_3": ", by improving their web site and developing a mobile app, that monitures agricultural data.",
+    "content_4": "One subproject to which I have enrolled is the development of a neural network training tool. To access the paper, click ",
     "link_1": "iTec - Furg",
-    "link_2": "Auros Robotics"
+    "link_2": "Auros Robotics",
+    "link_3": "here."
+  },
+
+  "dowhile2":{
+    "date": "December 2022",
+    "content_1": "I participated for a second time in the Do While event. This time, the ideia was to feel how the programming ecossystem is changing, thus the event name was The Expanding Universe."
+  },
+  "ignite":{
+    "date": "December 2022",
+    "content_1": "I finished another web programming course, promoted by RocketSeat. However, this time I´ve focused on front-end, specially the Next.js framework."
+  },
+  "bytejr2":{
+    "date": "December 2022",
+    "content_1": "I´ve finished my lifecycle with Byte Jr. For a last moment together, I´ve been to the Prêmio Jejers event, in which we´ve celebrated our achivements and results during the year.",
+    "content_2": " You can check the event's certificate by clicking ",
+    "link_1": "here.",
+    "link_2": "Byte Jr. certificate"
   },
   "certificate": "Certificate here"
 }

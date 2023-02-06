@@ -1,4 +1,9 @@
 {
+  "network":{
+    "name": "network",
+    "date": "Janeiro 2023",
+    "content_1": "Essa aplicação consiste em um monorepo, que simula um rede social completa (versão beta). O Front-end foi desenvolvido com ReactJS, e o código está na pasta web. O Back-end foi escrito em python, e diversas libs foram utilizadas para as funcionalidades."
+  },
   "stocks":{
     "name": "stocks",
     "date": "Agosto 2022",

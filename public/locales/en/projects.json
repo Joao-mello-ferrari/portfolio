@@ -1,4 +1,9 @@
 {
+  "network":{
+    "name": "network",
+    "date": "January 2023",
+    "content_1": "This application consists in a mono repo, which simulates a complete network (beta version). Front-end was develped with ReactJS, and the code is inside the web folder. Back-end has been written in python, and we have used some fancy libs to create the backend logic."
+  },
   "stocks":{
     "name": "stocks",
     "date": "August 2022",

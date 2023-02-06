@@ -14,6 +14,24 @@ export function Projects(){
 
   return(
     <div className={styles.container}>
+      <Card title={projects('network.name')} date={projects('network.date')} name="network">
+        <p>
+          {projects('network.content_1')}
+        </p>
+
+        <div className={styles.bottomInfoContainer}>
+          <div>
+            <Git url="https://github.com/Joao-mello-ferrari/network"/>
+            <Youtube url="https://www.youtube.com/embed/YZYNvoWDaLo"/>
+          </div>
+          <div className={styles.techs}>
+            <ReactIcon/>
+            <Typescript/>
+            <Python/>
+          </div>
+        </div>
+      </Card>
+
       <Card title={projects('stocks.name')} date={projects('stocks.date')} name="stocks">
         <p>
           {projects('stocks.content_1')}
@@ -32,29 +50,6 @@ export function Projects(){
           </div>
           <div className={styles.techs}>
             <ReactIcon/>
-            <Typescript/>
-          </div>
-        </div>
-      </Card>
-
-      <Card title={projects('eforecast.name')} date={projects('eforecast.date')} name="eforecast">
-        <p>
-          {projects('eforecast.content_1')}
-          <Link
-            to="https://openweathermap.org/"
-            content={projects('eforecast.link_1')}
-          />
-          &nbsp;
-          {projects('eforecast.content_2')}
-        </p>
-
-        <div className={styles.bottomInfoContainer}>
-          <div>
-            <Git url="https://github.com/Joao-mello-ferrari/e.forecast"/>
-            <Online url="https://eforecast.joaomellof.com/"/>
-          </div>
-          <div className={styles.techs}>
-            <Next/>
             <Typescript/>
           </div>
         </div>
@@ -82,6 +77,29 @@ export function Projects(){
           />
         </div>
       </div>
+
+      <Card title={projects('eforecast.name')} date={projects('eforecast.date')} name="eforecast">
+        <p>
+          {projects('eforecast.content_1')}
+          <Link
+            to="https://openweathermap.org/"
+            content={projects('eforecast.link_1')}
+          />
+          &nbsp;
+          {projects('eforecast.content_2')}
+        </p>
+
+        <div className={styles.bottomInfoContainer}>
+          <div>
+            <Git url="https://github.com/Joao-mello-ferrari/e.forecast"/>
+            <Online url="https://eforecast.joaomellof.com/"/>
+          </div>
+          <div className={styles.techs}>
+            <Next/>
+            <Typescript/>
+          </div>
+        </div>
+      </Card>
 
       <Card title={projects('elearning.name')} date={projects('elearning.date')} name="elearning">
         <p>{projects('elearning.content')}</p>
